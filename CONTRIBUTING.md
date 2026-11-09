@@ -29,6 +29,12 @@ unter `constructs/`.
 - Zurückziehen: `status: retired` und `retired_since: <release>`. Löschen ist nicht erlaubt, weil bestehende
   Befragungen den Key tragen.
 
+### Releases
+
+Ein Release entsteht durch einen Tag `JJJJ.MM.N` (nur Code Owners). Der Lauf baut `manifest.json` und signiert es
+mit minisign; den öffentlichen Schlüssel `minisign.pub` im Wurzelordner bitte nur mit einem eigenen PR der Code
+Owners ändern, weil jede Askurious-Instanz ihm vertraut.
+
 ### Rechte
 
 Mit dem PR bestätigst du, dass du jeden Wortlaut, den du einbringst, unter der angegebenen Lizenz weitergeben
@@ -74,6 +80,12 @@ Thank you for extending the catalogue. A pull request (PR) concerns exactly one 
 - Structure changed (items, points, codes, polarity, subscales): raise the major number (`2.1` → `3.0`).
 - Withdraw: `status: retired` and `retired_since: <release>`. Deleting is not allowed, because existing surveys
   carry the key.
+
+### Releases
+
+A release comes from a tag `YYYY.MM.N` (code owners only). The run builds `manifest.json` and signs it with
+minisign; change the public key `minisign.pub` in the root folder only in a pull request of its own by the code
+owners, because every Askurious instance trusts it.
 
 ### Rights
 

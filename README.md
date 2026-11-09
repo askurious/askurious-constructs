@@ -28,6 +28,18 @@ die Hauptnummer; ändert sich nur der Wortlaut, die Nebennummer. Die Prüfung im
 Konstrukt wird nie gelöscht, sondern mit `status: retired` zurückgezogen. Releases heißen `JJJJ.MM.N` und
 liefern `manifest.json` mit Signatur (`manifest.json.sig`, minisign).
 
+### Signatur prüfen
+
+Der öffentliche Schlüssel liegt als `minisign.pub` im Wurzelordner dieses Repositorys (kommt mit dem ersten
+Release); Askurious trägt denselben Schlüssel im Code. Prüfen:
+
+```bash
+minisign -V -p minisign.pub -m manifest.json -x manifest.json.sig
+```
+
+Der geheime Schlüssel liegt nur als Secret des Repositorys (`MANIFEST_SIGNING_KEY`, Passwort in
+`MANIFEST_SIGNING_PASSWORD`) und offline bei Ralf Philipsen.
+
 ### Nutzen
 
 ```bash
@@ -82,6 +94,18 @@ Each construct has the version `MAJOR.MINOR`: when the structure changes (items,
 major number goes up; when only the wording changes, the minor number. The pull request check enforces this. A
 construct is never deleted but withdrawn with `status: retired`. Releases are named `YYYY.MM.N` and ship
 `manifest.json` with a signature (`manifest.json.sig`, minisign).
+
+### Checking the signature
+
+The public key is `minisign.pub` in the root folder of this repository (it arrives with the first release);
+Askurious carries the same key in its code. Check:
+
+```bash
+minisign -V -p minisign.pub -m manifest.json -x manifest.json.sig
+```
+
+The secret key exists only as a secret of the repository (`MANIFEST_SIGNING_KEY`, password in
+`MANIFEST_SIGNING_PASSWORD`) and offline with Ralf Philipsen.
 
 ### Use
 

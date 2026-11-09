@@ -152,6 +152,26 @@ def check_families(root: Path, report: Report, ctx: dict) -> dict[str, dict]:
     return out
 
 
+def check_family_members(families: dict[str, dict], current: dict[str, dict], report: Report):
+    """Every member of a family is a construct here, in one family only; a construct that names a family is a
+    member of it."""
+    seen: dict[str, str] = {}
+    for fid, fam in families.items():
+        keys = [m["key"] for m in fam["members"]]
+        if len(set(keys)) != len(keys):
+            report.error(f"families/{fid}.yaml", "a construct is listed twice")
+        for key in keys:
+            if key not in current:
+                report.error(f"families/{fid}.yaml", f"member {key!r} is no construct of the catalogue")
+            if key in seen and seen[key] != fid:
+                report.error(f"families/{fid}.yaml", f"{key!r} is in the family {seen[key]!r} already")
+            seen[key] = fid
+    for key, checked in current.items():
+        fid = checked["construct"].get("family")
+        if fid and fid in families and key not in {m["key"] for m in families[fid]["members"]}:
+            report.error(f"constructs/{key}", f"names the family {fid!r} but is not among its members")
+
+
 # ---- version rule against a git revision ----
 
 def _git(root: Path, *args: str) -> str | None:
@@ -225,6 +245,7 @@ def validate(root: Path, base: str | None = None, examples: bool = True) -> list
             current[checked["construct"]["key"]] = checked
         elif not (folder / "construct.yaml").exists():
             report.error(f"constructs/{folder.name}", "construct.yaml is missing")
+    check_family_members(ctx["families"], current, report)
     if examples:
         for folder in common.construct_dirs(root, common.EXAMPLES):
             check_construct(folder, report, ctx)

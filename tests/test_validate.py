@@ -139,3 +139,25 @@ def test_new_construct_passes_against_base(repo):
     git(repo, "status")
     assert validate.validate(repo, base="main") == []
     assert len(common.construct_dirs(repo)) == 5
+
+
+def _family(root, members, fid="technik"):
+    (root / "families" / f"{fid}.yaml").write_text(common.dump_yaml({
+        "id": fid, "name": {"de": "Technik", "en": "Technology"},
+        "members": [{"key": k, "label": {"de": k, "en": k}} for k in members]}), encoding="utf-8")
+
+
+def test_families_name_constructs_of_the_catalogue(catalogue):
+    _family(catalogue, ["kamb", "bfi10"])
+    assert validate.validate(catalogue) == []
+    _family(catalogue, ["kamb", "gibtsnicht"])
+    assert any("'gibtsnicht' is no construct" in e for e in validate.validate(catalogue))
+
+
+def test_a_construct_is_in_one_family_and_its_field_agrees(catalogue):
+    _family(catalogue, ["kamb", "bfi10"])
+    _family(catalogue, ["kamb", "sorgfalt"], fid="zweite")
+    assert any("in the family" in e and "already" in e for e in validate.validate(catalogue))
+    (catalogue / "families" / "zweite.yaml").unlink()
+    edit_yaml(catalogue / "constructs" / "sorgfalt" / "construct.yaml", lambda c: c.update(family="technik"))
+    assert any("not among its members" in e for e in validate.validate(catalogue))

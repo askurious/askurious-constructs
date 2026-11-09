@@ -30,11 +30,12 @@ liefern `manifest.json` mit Signatur (`manifest.json.sig`, minisign).
 
 ### Signatur prüfen
 
-Der öffentliche Schlüssel liegt als `minisign.pub` im Wurzelordner dieses Repositorys (kommt mit dem ersten
-Release); Askurious trägt denselben Schlüssel im Code. Prüfen:
+Der öffentliche Schlüssel liegt als `minisign.pub` im Wurzelordner dieses Repositorys (Schlüssel-ID
+`8F880D565AD04DE6`); Askurious trägt denselben Schlüssel im Code. Prüfen:
 
 ```bash
 minisign -V -p minisign.pub -m manifest.json -x manifest.json.sig
+minisign -V -P RWTmTdBaVg2Ij3LgzDuGpbt4rr61X/xFBDIwGjVM/N1qXVfJUOMA3FMG -m manifest.json -x manifest.json.sig
 ```
 
 Der geheime Schlüssel liegt nur als Secret des Repositorys (`MANIFEST_SIGNING_KEY`, Passwort in
@@ -97,11 +98,12 @@ construct is never deleted but withdrawn with `status: retired`. Releases are na
 
 ### Checking the signature
 
-The public key is `minisign.pub` in the root folder of this repository (it arrives with the first release);
-Askurious carries the same key in its code. Check:
+The public key is `minisign.pub` in the root folder of this repository (key ID `8F880D565AD04DE6`); Askurious
+carries the same key in its code. Check:
 
 ```bash
 minisign -V -p minisign.pub -m manifest.json -x manifest.json.sig
+minisign -V -P RWTmTdBaVg2Ij3LgzDuGpbt4rr61X/xFBDIwGjVM/N1qXVfJUOMA3FMG -m manifest.json -x manifest.json.sig
 ```
 
 The secret key exists only as a secret of the repository (`MANIFEST_SIGNING_KEY`, password in

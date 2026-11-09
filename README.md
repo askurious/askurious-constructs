@@ -1,6 +1,14 @@
 # askurious-constructs
 
+[![validate](https://github.com/askurious/askurious-constructs/actions/workflows/validate.yml/badge.svg)](https://github.com/askurious/askurious-constructs/actions/workflows/validate.yml)
+[![Release](https://img.shields.io/github/v/release/askurious/askurious-constructs?label=Release)](https://github.com/askurious/askurious-constructs/releases/latest)
+[![Lizenz / licence: CC0-1.0, CC-BY-4.0, EUPL-1.2](https://img.shields.io/badge/Lizenz%20%2F%20licence-CC0--1.0%20%C2%B7%20CC--BY--4.0%20%C2%B7%20EUPL--1.2-blue)](NOTICE)
+[![REUSE](https://img.shields.io/badge/REUSE-compliant-green)](https://reuse.software/)
+
 [Deutsch](#deutsch) · [English](#english)
+
+Hauptrepository / main repository: [askurious/askurious](https://github.com/askurious/askurious) ·
+Lizenzen / licences: [NOTICE](NOTICE) · [Sicherheit / security](SECURITY.md) · [Verhaltensregeln / code of conduct](CODE_OF_CONDUCT.md)
 
 ## Deutsch
 
@@ -30,11 +38,12 @@ liefern `manifest.json` mit Signatur (`manifest.json.sig`, minisign).
 
 ### Signatur prüfen
 
-Der öffentliche Schlüssel liegt als `minisign.pub` im Wurzelordner dieses Repositorys (kommt mit dem ersten
-Release); Askurious trägt denselben Schlüssel im Code. Prüfen:
+Der öffentliche Schlüssel liegt als `minisign.pub` im Wurzelordner dieses Repositorys (Schlüssel-ID
+`8F880D565AD04DE6`); Askurious trägt denselben Schlüssel im Code. Prüfen:
 
 ```bash
 minisign -V -p minisign.pub -m manifest.json -x manifest.json.sig
+minisign -Vm manifest.json -x manifest.json.sig -P RWTmTdBaVg2Ij3LgzDuGpbt4rr61X/xFBDIwGjVM/N1qXVfJUOMA3FMG
 ```
 
 Der geheime Schlüssel liegt nur als Secret des Repositorys (`MANIFEST_SIGNING_KEY`, Passwort in
@@ -66,8 +75,15 @@ Nach [REUSE](https://reuse.software/), maschinenlesbar in `REUSE.toml`:
 | Wortlaut in `constructs/*/wording/` | CC BY 4.0 (Quelle in der `construct.yaml` daneben) |
 | `tools/`, `tests/` | EUPL-1.2 |
 
-Die Quellenangabe je Konstrukt bleibt Pflicht, wenn du es in einer Befragung einsetzt (`sources`, `notes`).
-Lizenzierter Wortlaut liegt nicht in diesem Repository. Die Lizenzeinschätzungen sind keine Rechtsberatung.
+GitHub zeigt CC0 als Lizenz des Repositorys (`LICENSE`); welche Lizenz für welche Datei gilt, steht in `NOTICE`
+und `REUSE.toml`. Die Quellenangabe je Konstrukt bleibt Pflicht, wenn du es in einer Befragung einsetzt
+(`sources`, `notes`). Lizenzierter Wortlaut liegt nicht in diesem Repository. Die Lizenzeinschätzungen sind keine
+Rechtsberatung.
+
+### Kontakt
+
+Ralf Philipsen (philipsen@comm.rwth-aachen.de) und Philipp Brauner (brauner@comm.rwth-aachen.de), Lehrstuhl für
+Kommunikationswissenschaft, RWTH Aachen University. Sicherheitslücken bitte vertraulich melden (`SECURITY.md`).
 
 ## English
 
@@ -97,11 +113,12 @@ construct is never deleted but withdrawn with `status: retired`. Releases are na
 
 ### Checking the signature
 
-The public key is `minisign.pub` in the root folder of this repository (it arrives with the first release);
-Askurious carries the same key in its code. Check:
+The public key is `minisign.pub` in the root folder of this repository (key ID `8F880D565AD04DE6`); Askurious
+carries the same key in its code. Check:
 
 ```bash
 minisign -V -p minisign.pub -m manifest.json -x manifest.json.sig
+minisign -Vm manifest.json -x manifest.json.sig -P RWTmTdBaVg2Ij3LgzDuGpbt4rr61X/xFBDIwGjVM/N1qXVfJUOMA3FMG
 ```
 
 The secret key exists only as a secret of the repository (`MANIFEST_SIGNING_KEY`, password in
@@ -133,5 +150,11 @@ Following [REUSE](https://reuse.software/), machine-readable in `REUSE.toml`:
 | Wording in `constructs/*/wording/` | CC BY 4.0 (source in the `construct.yaml` next to it) |
 | `tools/`, `tests/` | EUPL-1.2 |
 
-Citing the source of each construct remains required when you use it in a survey (`sources`, `notes`). Licensed
-wording is not in this repository. The licence assessments are not legal advice.
+GitHub shows CC0 as the licence of the repository (`LICENSE`); which licence applies to which file is in `NOTICE`
+and `REUSE.toml`. Citing the source of each construct remains required when you use it in a survey (`sources`,
+`notes`). Licensed wording is not in this repository. The licence assessments are not legal advice.
+
+### Contact
+
+Ralf Philipsen (philipsen@comm.rwth-aachen.de) and Philipp Brauner (brauner@comm.rwth-aachen.de), Chair of
+Communication Science, RWTH Aachen University. Please report vulnerabilities privately (`SECURITY.md`).

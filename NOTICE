@@ -8,6 +8,9 @@ This repository uses three licences. Which one applies to which file is stated m
   and documentation, i.e. everything not listed below. CC0 is the licence GitHub shows for the repository.
 - CC-BY-4.0 (LICENSES/CC-BY-4.0.txt): the wording in constructs/*/wording/. The authors and the source of each
   wording are named in the construct.yaml next to its folder; cite them when you use it.
+- LicenseRef-source-attributed (LICENSES/LicenseRef-source-attributed.txt): the wording of constructs with the licence
+  key source-attributed (today constructs/gender/wording/: answer categories after Spiel, Haimson & Lottridge, 2019).
+  No open licence is documented for it; it is not under CC BY. Always cite the source.
 - EUPL-1.2 (LICENSES/EUPL-1.2.txt): the tools in tools/ and their tests in tests/, as in the main repository
   askurious/askurious. RWTH Aachen University holds the rights in this code and is the Licensor.
 
@@ -28,7 +31,8 @@ Copyright (c) 2026 RWTH Aachen University und die Beitragenden. Autoren: Ralf Ph
 
 Drei Lizenzen gelten, welche für welche Datei, steht maschinenlesbar in REUSE.toml; die Volltexte in LICENSES/:
 CC0-1.0 für Metadaten, Struktur, Hashes, Schemas, Vokabulare, Familien, Beispiele und Dokumentation; CC-BY-4.0 für
-den Wortlaut in constructs/*/wording/ (Quelle in der construct.yaml daneben); EUPL-1.2 für tools/ und tests/
+den Wortlaut in constructs/*/wording/ (Quelle in der construct.yaml daneben), außer constructs/gender/wording/ (Antwortkategorien
+nach Spiel, Haimson & Lottridge, 2019, keine offene Lizenz dokumentiert, LicenseRef-source-attributed); EUPL-1.2 für tools/ und tests/
 (Lizenzgeberin RWTH Aachen University, wie im Hauptrepository). Anders lizenzierter Wortlaut (z. B. GESIS/ZIS,
 Verlagsartikel) liegt nicht hier, nur Struktur und Wortlauthash. Die Quelle eines Konstrukts ist beim Einsatz immer
 anzugeben. Die Lizenzeinschätzungen sind keine Rechtsberatung. Die Namen „Askurious“ und „POLLtergeist“ und ihre

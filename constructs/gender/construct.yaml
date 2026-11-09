@@ -24,8 +24,11 @@ scoring:
   de: ''
   en: ''
 notes:
-  de: Eigene Formulierung von Askurious nach den Empfehlungen von Spiel, Haimson & Lottridge (2019).
-  en: Own wording of Askurious following the recommendations of Spiel, Haimson & Lottridge (2019).
+  de: 'Antwortkategorien nach Spiel, Haimson & Lottridge (2019), Interactions, 26(4), 62–65, https://doi.org/10.1145/3338283;
+    deutsche Fassung von Askurious. Für den Wortlaut ist keine offene Lizenz dokumentiert; die Quelle ist immer
+    anzugeben.'
+  en: 'Answer categories after Spiel, Haimson & Lottridge (2019), Interactions, 26(4), 62–65, https://doi.org/10.1145/3338283;
+    German version by Askurious. No open licence is documented for the wording; always cite the source.'
 authors:
 - family: Spiel
 - family: Haimson
@@ -37,10 +40,10 @@ sources:
     A guide for HCI researchers. Interactions, 26(4), 62–65.'
   doi: 10.1145/3338283
 licence:
-  wording: CC-BY-4.0
+  wording: source-attributed
   distributable: true
   permission_required: false
-  commercial: true
+  commercial: null
 tags:
   status:
   - Standardfrage

@@ -1,0 +1,15 @@
+Wording after a publication, with attribution (askurious-constructs licence key "source-attributed")
+
+The wording in such a folder (today constructs/gender/wording/) follows a published source that is named in the
+construct.yaml next to it (sources, notes). It consists of short answer categories. No open licence is documented for
+this wording, and it is not licensed under CC BY 4.0 or CC0 1.0 by this repository. Whoever uses it must cite the
+source. Rights in the source remain with its authors and publisher.
+
+---
+
+Wortlaut nach einer Veröffentlichung, mit Quellenangabe (Lizenzschlüssel „source-attributed“ in askurious-constructs)
+
+Der Wortlaut in einem solchen Ordner (derzeit constructs/gender/wording/) folgt einer veröffentlichten Quelle, die in
+der construct.yaml daneben steht (sources, notes). Er besteht aus kurzen Antwortkategorien. Für diesen Wortlaut ist
+keine offene Lizenz dokumentiert; dieses Repository stellt ihn weder unter CC BY 4.0 noch unter CC0 1.0. Wer ihn nutzt,
+gibt die Quelle an. Rechte an der Quelle bleiben bei ihren Autorinnen, Autoren und dem Verlag.

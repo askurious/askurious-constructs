@@ -1,0 +1,6 @@
+for: ask:ratswd_ges1@1.0
+question: Welches Geschlecht haben Sie?
+options:
+  '1': männlich
+  '2': weiblich
+  '3': divers

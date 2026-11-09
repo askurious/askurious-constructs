@@ -1,0 +1,72 @@
+# Beispiel: Likert-Skala mit lizenziertem Wortlaut. Hier steht nur das Gerüst: Codes, Stufen, Antwortlabels,
+# Subskalen, Umpolung und je Sprache der Hash des Wortlauts. Kein Wortlaut, auch nicht in Kommentaren.
+# Den Wortlaut hält jede Instanz in ihrem privaten Overlay (<key>/<sprache>.yaml, Format wie wording.schema.json).
+# Hash berechnen: python tools/hash.py --wording <overlay>/<key>/de.yaml
+#
+# Example: Likert scale with licensed wording. Only the frame is here: codes, points, response labels, subscales,
+# reversed items and per language the hash of the wording. No wording, not even in comments. Each instance keeps
+# the wording in its private overlay. Hash: python tools/hash.py --wording <overlay>/<key>/de.yaml
+format: 1
+id: ask:beispiel_likert_lizenziert
+key: beispiel_likert_lizenziert
+version: "1.0"
+status: review
+kind: scale
+requires: "2026.11"
+name:
+  de: Beispiel einer lizenzierten Kurzskala
+  en: Example of a licensed short scale
+short:
+  de: 4 Aussagen, 5 Stufen; zwei Subskalen
+  en: 4 statements, 5 points; two subscales
+description:
+  de: Erfundenes Beispiel, zeigt das Gerüst einer Skala, deren Wortlaut nicht weitergegeben werden darf.
+  en: Invented example showing the frame of a scale whose wording may not be passed on.
+scoring:
+  de: Zwei Skalenwerte als Mittelwert je zwei Items (A, B); Item 2 ist im Export bereits rekodiert.
+  en: Two scale scores as the mean of two items each (A, B); item 2 is already recoded in the export.
+notes:
+  de: "GESIS/ZIS: kostenfrei für nichtkommerzielle Forschungszwecke. Die ZIS-Dokumentation ist als Quelle anzugeben."
+  en: "GESIS/ZIS: free of charge for non-commercial research. Cite the ZIS documentation as the source."
+authors:
+  - {family: Muster}
+  - {family: Beispiel}
+year: 2026
+sources:
+  - role: documentation
+    citation: "Muster, E., & Beispiel, B. (2026). Beispielskala. Zusammenstellung sozialwissenschaftlicher Items und Skalen (ZIS)."
+    doi: 10.6102/zis0
+licence:
+  wording: ZIS-noncommercial
+  distributable: false          # kein wording/-Ordner erlaubt / no wording/ folder allowed
+  permission_required: false
+  commercial: false
+tags:
+  status: [validiert]
+  quelle: [GESIS ZIS]
+  art: [Persönlichkeit]
+  fach: [Psychologie]
+  bezug: ["Person: stabil"]
+family: null
+structure:
+  type: likert
+  code: BLZ
+  config:
+    points: 5
+    labeling: full
+    label_display: once
+    randomize: true
+    statements:
+      - {id: s1, code: BLZ_1, reverse: false, subscale: A}
+      - {id: s2, code: BLZ_2, reverse: true, subscale: A}
+      - {id: s3, code: BLZ_3, reverse: false, subscale: B}
+      - {id: s4, code: BLZ_4, reverse: false, subscale: B}
+  labels:                       # bei lizenzierten Skalen in der Struktur / with licensed scales in the structure
+    de: [trifft gar nicht zu, trifft wenig zu, trifft etwas zu, trifft ziemlich zu, trifft voll und ganz zu]
+languages:
+  de:
+    status: validated
+    wording: overlay            # kommt aus dem Overlay der Instanz / comes from the instance's overlay
+    sha256: sha256:0000000000000000000000000000000000000000000000000000000000000000
+versions:
+  - {version: "1.0", date: "2026-11-09", note: Erste Fassung / first version}

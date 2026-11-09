@@ -1,0 +1,6 @@
+for: ask:ratswd_erw2@1.0
+question: Gehen Sie nebenher einer bezahlten Erwerbstätigkeit (Minijob, Aushilfstätigkeit) nach?
+options:
+  '1': Ja
+  '2': Nein
+  '-1': Weiß nicht

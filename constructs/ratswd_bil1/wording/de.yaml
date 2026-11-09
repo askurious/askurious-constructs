@@ -1,0 +1,13 @@
+for: ask:ratswd_bil1@1.0
+question: 'Welchen höchsten allgemeinbildenden Schulabschluss haben Sie?
+
+  <small>Hinweis: Personen mit ausländischen Bildungsabschlüssen sollen sich den Kategorien 2, 3 oder
+  4 zuordnen.</small>'
+options:
+  '1': (Noch) kein Schulabschluss
+  '2': Hauptschulabschluss (Volksschulabschluss) oder gleichwertiger Abschluss, Polytechnische Oberschule
+    der DDR mit Abschluss der 8. oder 9. Klasse
+  '3': Realschulabschluss (Mittlere Reife) oder gleichwertiger Abschluss, Polytechnische Oberschule der
+    DDR mit Abschluss der 10. Klasse
+  '4': (Fach-)Hochschulreife/Abitur (auch EOS oder EOS mit Lehre)
+  '-1': Weiß nicht

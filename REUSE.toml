@@ -1,0 +1,28 @@
+version = 1
+SPDX-PackageName = "askurious-constructs"
+SPDX-PackageSupplier = "Ralf Philipsen <philipsen@comm.rwth-aachen.de>"
+SPDX-PackageDownloadLocation = "https://github.com/askurious/askurious-constructs"
+
+# Metadaten, Struktur, Hashes, Schemas, Vokabulare, Beispiele und Dokumentation: CC0 1.0
+# Metadata, structure, hashes, schemas, vocabularies, examples and documentation: CC0 1.0
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Askurious contributors"
+SPDX-License-Identifier = "CC0-1.0"
+
+# Offen lizenzierter Wortlaut der Konstrukte: CC BY 4.0 (Quelle je Konstrukt in construct.yaml)
+# Openly licensed wording of the constructs: CC BY 4.0 (source per construct in construct.yaml)
+[[annotations]]
+path = "constructs/**/wording/**"
+precedence = "override"
+SPDX-FileCopyrightText = "The authors named in the construct.yaml next to this folder"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+# Werkzeuge und Tests: EUPL-1.2, wie das Hauptrepository
+# Tools and tests: EUPL-1.2, like the main repository
+[[annotations]]
+path = ["tools/**", "tests/**"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Askurious contributors"
+SPDX-License-Identifier = "EUPL-1.2"

@@ -1,0 +1,90 @@
+# Haushaltsnettoeinkommen grob (RatSWD HNE_3)
+# Wortlaut: wording/<Sprache>.yaml
+format: 1
+id: ask:ratswd_hne3
+key: ratswd_hne3
+version: '1.0'
+status: review
+kind: standard_question
+requires: '2026.11'
+name:
+  de: Haushaltsnettoeinkommen grob (RatSWD HNE_3)
+  en: Household net income, rough (RatSWD HNE_3)
+short:
+  de: 'Drei Klassen: unter 1.500, bis 3.000, ab 3.000 Euro'
+  en: 'Three classes: under 1,500, to 3,000, from 3,000 euros'
+description:
+  de: Basis-Merkmal des RatSWD-Standardfragenkatalogs (2023). Geschlossene Frage mit „unfolding brackets“
+    nach NEPS (erste Frage); die Folgefragen HNE_4 bis HNE_6 teilen jede Klasse in drei. Der Katalog stellt
+    sie nach der offenen Frage HNE_1; der Fragetext beginnt deshalb mit „Es würde uns schon helfen …“.
+  en: Basic characteristic of the RatSWD catalogue of standard questions (2023). Closed question with
+    unfolding brackets after NEPS (first question); the follow-ups HNE_4 to HNE_6 split each class into
+    three. The catalogue asks it after the open question HNE_1, so the question starts with “It would
+    already help us …”.
+scoring:
+  de: 1 = unter 1.500 Euro, 2 = 1.500 bis unter 3.000 Euro, 3 = 3.000 Euro und mehr. −1 = weiß nicht,
+    −2 = keine Angabe (fehlend).
+  en: 1 = under 1,500 euros, 2 = 1,500 to under 3,000 euros, 3 = 3,000 euros or more. −1 = don't know,
+    −2 = no answer (missing).
+notes:
+  de: 'Lizenz: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), frei nutzbar mit Quellenangabe;
+    Änderungen kennzeichnen (das Codebuch nennt Abweichungen vom Wortlaut). „Weiß nicht“ (−1) und „Keine
+    Angabe“ (−2) zählen als fehlend. Standardfrage: nicht Teil der gemeinsamen Auswertung der Konstrukte
+    (Pool). Englische Fassung: inoffizielle Arbeitsübersetzung.'
+  en: 'Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), free to use with attribution;
+    mark changes (the codebook lists deviations from the wording). “Don''t know” (−1) and “No answer”
+    (−2) count as missing. Standard question: not part of the pooled analysis of the constructs (pool).
+    English version: unofficial working translation.'
+authors:
+- name: RatSWD
+year: 2023
+sources:
+- role: original
+  citation: Rat für Sozial- und Wirtschaftsdaten. (2023). Standardfragenkatalog zur Erhebung soziodemographischer
+    und krisenbezogener Variablen (2. Aufl.; RatSWD Output Series, 7. Berufungsperiode Nr. 4b). RatSWD.
+  doi: 10.17620/02671.76
+licence:
+  wording: CC-BY-4.0
+  distributable: true
+  permission_required: false
+  commercial: true
+tags:
+  status:
+  - Standardfrage
+  quelle:
+  - RatSWD/KonsortSWD
+  art:
+  - Demografie
+  thema:
+  - Einkommen
+  bezug:
+  - 'Person: veränderlich'
+family: null
+structure:
+  type: single_choice
+  code: HNE_3
+  config:
+    options:
+    - id: o1
+      code: '1'
+    - id: o2
+      code: '2'
+    - id: o3
+      code: '3'
+    - id: o4
+      code: '-1'
+      missing: true
+    - id: o5
+      code: '-2'
+      missing: true
+    layout: vertical
+languages:
+  de:
+    status: source
+    wording: repo
+  en:
+    status: working
+    wording: repo
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

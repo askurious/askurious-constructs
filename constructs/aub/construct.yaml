@@ -1,0 +1,141 @@
+# Allgemeines Umweltbewusstsein
+# Wortlaut: nicht im Repository (Lizenz), nur der Hash je Sprache
+format: 1
+id: ask:aub
+key: aub
+version: '1.0'
+status: verified
+kind: scale
+requires: '2026.11'
+name:
+  de: Allgemeines Umweltbewusstsein
+  en: General Environmental Awareness
+short:
+  de: 11 Aussagen, 5 Stufen; intrinsisches und instrumentelles Naturverständnis, Natur als Existenzgrundlage
+  en: 11 statements, 5 points; intrinsic and instrumental understanding of nature, nature as the basis
+    of existence
+description:
+  de: Erfasst Umweltbewusstsein als allgemeine Überzeugung oder Weltbild in drei Dimensionen. Entwickelt
+    an der Umfrage „Umweltbewusstsein in Deutschland 1996“. Cronbachs Alpha .46 (intrinsisches Naturverständnis),
+    .61 (instrumentelles Naturverständnis), .68 (Natur als Existenzgrundlage), also teils niedrig.
+  en: Measures environmental awareness as a general belief or world view in three dimensions. Developed
+    with the survey “Umweltbewusstsein in Deutschland 1996” (environmental awareness in Germany 1996).
+    Cronbach's alpha .46 (intrinsic understanding of nature), .61 (instrumental understanding of nature),
+    .68 (nature as the basis of existence), so partly low.
+scoring:
+  de: 'ZIS macht keine Auswertungsangaben. Die Reliabilitäten dort beziehen sich auf drei Dimensionen:
+    instrumentelles Naturverständnis (Items 1, 2, 4, 6), intrinsisches Naturverständnis (7, 8), Natur
+    als Existenzgrundlage (9, 10, 11); hier je als Mittelwert. Die Items 3 und 5 laden auf zwei Faktoren
+    (intrinsisch und Existenzgrundlage) und sind keiner Subskala zugeordnet. Keine Umpolung; ein Gesamtwert
+    ist nicht dokumentiert.'
+  en: 'ZIS gives no scoring instructions. The reliabilities there refer to three dimensions: instrumental
+    understanding of nature (items 1, 2, 4, 6), intrinsic understanding of nature (7, 8), nature as the
+    basis of existence (9, 10, 11); here each as a mean. Items 3 and 5 load on two factors (intrinsic
+    and basis of existence) and belong to no subscale. No reverse coding; a total score is not documented.'
+notes:
+  de: 'GESIS/ZIS: kostenfrei für nichtkommerzielle Forschungszwecke. Für andere Zwecke oder eine andere
+    als die dokumentierte Form ist das Einverständnis der Autorinnen und Autoren einzuholen. Die ZIS-Dokumentation
+    ist in allen resultierenden Arbeiten als Quelle anzugeben. Nur deutsche Fassung. Im Original ein mündliches
+    Interview mit Antwortkarten (daher „sagen Sie mir“) in zwei Blöcken: Vor den Items 9 bis 11 stand
+    „Jetzt noch ein paar weitere Aussagen. Bitte sagen Sie mir auch diesmal zu jeder Aussage, in welchem
+    Maße Sie zustimmen.“'
+  en: 'GESIS/ZIS: free of charge for non-commercial research. For other purposes or a form other than
+    the documented one, ask the authors for permission. Cite the ZIS documentation as the source in all
+    resulting work. German version only. Originally an oral interview with answer cards (hence “sagen
+    Sie mir”, “tell me”) in two blocks: before items 9 to 11 the interviewer said “Jetzt noch ein paar
+    weitere Aussagen. Bitte sagen Sie mir auch diesmal zu jeder Aussage, in welchem Maße Sie zustimmen.”
+    (now a few more statements; again, please tell me for each statement how far you agree).'
+authors:
+- family: Wingerter
+year: 2001
+sources:
+- role: original
+  citation: Wingerter, C. (2001). Allgemeines Umweltbewusstsein. Zusammenstellung sozialwissenschaftlicher
+    Items und Skalen (ZIS).
+  doi: 10.6102/zis208
+licence:
+  wording: ZIS-noncommercial
+  distributable: false
+  permission_required: false
+  commercial: false
+tags:
+  status:
+  - validiert
+  quelle:
+  - GESIS ZIS
+  art:
+  - Einstellung
+  thema:
+  - Umwelt
+  - Umweltbewusstsein
+  fach:
+  - Soziologie
+  bezug:
+  - 'Person: veränderlich'
+family: null
+structure:
+  type: likert
+  code: AUB
+  config:
+    points: 5
+    labeling: full
+    label_display: once
+    randomize: true
+    statements:
+    - id: s1
+      code: AUB_1
+      reverse: false
+      subscale: Instrumentelles Naturverständnis
+    - id: s2
+      code: AUB_2
+      reverse: false
+      subscale: Instrumentelles Naturverständnis
+    - id: s3
+      code: AUB_3
+      reverse: false
+    - id: s4
+      code: AUB_4
+      reverse: false
+      subscale: Instrumentelles Naturverständnis
+    - id: s5
+      code: AUB_5
+      reverse: false
+    - id: s6
+      code: AUB_6
+      reverse: false
+      subscale: Instrumentelles Naturverständnis
+    - id: s7
+      code: AUB_7
+      reverse: false
+      subscale: Intrinsisches Naturverständnis
+    - id: s8
+      code: AUB_8
+      reverse: false
+      subscale: Intrinsisches Naturverständnis
+    - id: s9
+      code: AUB_9
+      reverse: false
+      subscale: Natur als Existenzgrundlage
+    - id: s10
+      code: AUB_10
+      reverse: false
+      subscale: Natur als Existenzgrundlage
+    - id: s11
+      code: AUB_11
+      reverse: false
+      subscale: Natur als Existenzgrundlage
+  labels:
+    de:
+    - stimme überhaupt nicht zu
+    - stimme eher nicht zu
+    - teils/teils
+    - stimme weitgehend zu
+    - stimme voll und ganz zu
+languages:
+  de:
+    status: validated
+    wording: overlay
+    sha256: sha256:e039d3379730667d89b3496f2530c1fa74736882e3a1b4d41555c68932446199
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

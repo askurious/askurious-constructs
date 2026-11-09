@@ -1,0 +1,7 @@
+for: ask:ratswd_sta1@1.0
+question: Haben Sie die deutsche Staatsangehörigkeit?
+options:
+  '1': Ja
+  '2': Nein
+  '-1': Weiß nicht
+  '-2': Keine Angabe

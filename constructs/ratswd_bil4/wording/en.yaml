@@ -1,0 +1,18 @@
+for: ask:ratswd_bil4@1.0
+question: 'What is your highest vocational or university qualification?
+
+  <small>Note: people with qualifications from abroad should choose one of the categories 2 to 8.</small>'
+options:
+  '1': No vocational qualification (yet)
+  '2': One-year training at a school for health care professions, preparatory service for the intermediate
+    civil service
+  '3': Two- to three-year training at a school for health care professions
+  '4': Completed vocational training (apprenticeship) or vocational qualification from a full-time vocational
+    school (Berufsfachschule, Kollegschule)
+  '5': Qualification as a nursery teacher, from a technical college, master craftsman or technician school,
+    academy of administration and economics or Fachakademie, also a GDR Fachschule
+  '6': Diploma from a university of cooperative education or university of applied sciences, bachelor's
+    degree
+  '7': University diploma, master's degree, Magister, state examination
+  '8': Doctorate
+  '-1': Don't know

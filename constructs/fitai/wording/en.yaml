@@ -1,0 +1,33 @@
+for: ask:fitai@1.0
+question: Below are various statements about artificial intelligence. To what extent are these statements
+  true?
+labels:
+- strongly disagree
+- ''
+- ''
+- ''
+- strongly agree
+items:
+  FI_1: Large language models (LLMs) primarily work by predicting the statistically most likely next word
+    in a sequence.
+  FI_2: AI models are trained on extensive datasets that often contain copyrighted books, articles, and
+    websites.
+  FI_3: Generative AI can “hallucinate”, i.e., it confidently gives answers that are factually wrong.
+  FI_4: A model's “context window” sets the maximum amount of text it can process or “remember” in a single
+    conversation.
+  FI_5: “Reinforcement Learning from Human Feedback (RLHF)” is a method for aligning AI behavior with
+    human values and safety guidelines.
+  FI_6: Neural networks consist of “weights” and “biases” that are adjusted during training to minimize
+    errors.
+  FI_7: To prevent overheating, modern AI systems must delete the memories of inactive users to free up
+    physical storage.
+  FI_8: AI models have a digital “subconscious” that processes information even when they are not actively
+    used.
+  FI_9: AI models learn a new language through “digital osmosis” by being stored next to files written
+    in that language.
+  FI_10: Through “semantic synchronicity”, AI models can express basic human emotions such as frustration
+    when a prompt is unclear.
+  FI_11: Advanced LLMs use “quantum entanglement” to synchronize their answers across different user devices
+    at the same time without using the internet.
+  FI_12: “Recursive hardware healing” is a process by which AI can physically repair damaged GPU circuits
+    by rerouting electrical currents.

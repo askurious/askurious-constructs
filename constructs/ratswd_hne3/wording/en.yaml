@@ -1,0 +1,10 @@
+for: ask:ratswd_hne3@1.0
+question: It would already help us if you could place yourself at least roughly in one of the following
+  categories. Is your monthly net household income less than 1,500 euros, 1,500 to under 3,000 euros or
+  3,000 euros or more per month?
+options:
+  '1': less than 1,500 euros
+  '2': 1,500 to under 3,000 euros
+  '3': 3,000 euros or more
+  '-1': Don't know
+  '-2': No answer

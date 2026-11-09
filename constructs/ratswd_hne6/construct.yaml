@@ -1,0 +1,86 @@
+# Haushaltsnettoeinkommen ab 3.000 Euro (RatSWD HNE_6)
+# Wortlaut: wording/<Sprache>.yaml
+format: 1
+id: ask:ratswd_hne6
+key: ratswd_hne6
+version: '1.0'
+status: review
+kind: standard_question
+requires: '2026.11'
+name:
+  de: Haushaltsnettoeinkommen ab 3.000 Euro (RatSWD HNE_6)
+  en: Household net income from 3,000 euros (RatSWD HNE_6)
+short:
+  de: 'Folgefrage: bis 4.000, bis 5.000, ab 5.000 Euro'
+  en: 'Follow-up: to 4,000, to 5,000, from 5,000 euros'
+description:
+  de: Basis-Merkmal des RatSWD-Standardfragenkatalogs (2023). Folgefrage zu HNE_3 = 3.
+  en: Basic characteristic of the RatSWD catalogue of standard questions (2023). Follow-up to HNE_3 =
+    3.
+scoring:
+  de: 1 = 3.000 bis unter 4.000 Euro, 2 = 4.000 bis unter 5.000 Euro, 3 = 5.000 Euro und mehr. −1 = weiß
+    nicht, −2 = keine Angabe (fehlend).
+  en: 1 = 3,000 to under 4,000 euros, 2 = 4,000 to under 5,000 euros, 3 = 5,000 euros or more. −1 = don't
+    know, −2 = no answer (missing).
+notes:
+  de: 'Lizenz: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), frei nutzbar mit Quellenangabe;
+    Änderungen kennzeichnen (das Codebuch nennt Abweichungen vom Wortlaut). „Weiß nicht“ (−1) und „Keine
+    Angabe“ (−2) zählen als fehlend. Standardfrage: nicht Teil der gemeinsamen Auswertung der Konstrukte
+    (Pool). Englische Fassung: inoffizielle Arbeitsübersetzung.'
+  en: 'Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), free to use with attribution;
+    mark changes (the codebook lists deviations from the wording). “Don''t know” (−1) and “No answer”
+    (−2) count as missing. Standard question: not part of the pooled analysis of the constructs (pool).
+    English version: unofficial working translation.'
+authors:
+- name: RatSWD
+year: 2023
+sources:
+- role: original
+  citation: Rat für Sozial- und Wirtschaftsdaten. (2023). Standardfragenkatalog zur Erhebung soziodemographischer
+    und krisenbezogener Variablen (2. Aufl.; RatSWD Output Series, 7. Berufungsperiode Nr. 4b). RatSWD.
+  doi: 10.17620/02671.76
+licence:
+  wording: CC-BY-4.0
+  distributable: true
+  permission_required: false
+  commercial: true
+tags:
+  status:
+  - Standardfrage
+  quelle:
+  - RatSWD/KonsortSWD
+  art:
+  - Demografie
+  thema:
+  - Einkommen
+  bezug:
+  - 'Person: veränderlich'
+family: null
+structure:
+  type: single_choice
+  code: HNE_6
+  config:
+    options:
+    - id: o1
+      code: '1'
+    - id: o2
+      code: '2'
+    - id: o3
+      code: '3'
+    - id: o4
+      code: '-1'
+      missing: true
+    - id: o5
+      code: '-2'
+      missing: true
+    layout: vertical
+languages:
+  de:
+    status: source
+    wording: repo
+  en:
+    status: working
+    wording: repo
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

@@ -1,0 +1,134 @@
+# Impulsives-Verhalten-8 (I-8)
+# Wortlaut: nicht im Repository (Lizenz), nur der Hash je Sprache
+format: 1
+id: ask:i8
+key: i8
+version: '1.0'
+status: verified
+kind: scale
+requires: '2026.11'
+name:
+  de: Impulsives-Verhalten-8 (I-8)
+  en: Impulsive Behavior Short Scale–8 (I-8)
+short:
+  de: 8 Aussagen, 5 Stufen; Dringlichkeit, Absicht, Ausdauer, Risikobereitschaft
+  en: 8 statements, 5 points; urgency, premeditation, perseverance, sensation seeking
+description:
+  de: Kurzskala zu vier Facetten impulsiven Verhaltens mit je zwei Items. Hohe Werte bei Dringlichkeit
+    und Risikobereitschaft stehen für hohe, bei Absicht und Ausdauer für niedrige Impulsivität.
+  en: Short scale on four facets of impulsive behaviour with two items each. High values on urgency and
+    sensation seeking stand for high impulsivity, on premeditation and perseverance for low impulsivity.
+scoring:
+  de: 'Vier Skalenwerte als Mittelwert je zwei Items: Dringlichkeit (1, 2), Absicht (3, 4), Ausdauer (5,
+    6), Risikobereitschaft (7, 8); keine Umpolung.'
+  en: 'Four scale scores as the mean of two items each: urgency (Dringlichkeit; 1, 2), premeditation (Absicht;
+    3, 4), perseverance (Ausdauer; 5, 6), sensation seeking (Risikobereitschaft; 7, 8); no reverse coding.'
+notes:
+  de: 'GESIS/ZIS: kostenfrei für nichtkommerzielle Forschungszwecke. Für andere Zwecke oder eine andere
+    als die dokumentierte Form ist das Einverständnis der Autorinnen und Autoren einzuholen. Die ZIS-Dokumentation
+    ist in allen resultierenden Arbeiten als Quelle anzugeben. Englische Fassung: Groskurth, K., Nießen,
+    D., Rammstedt, B., & Lechner, C. M. (2022). The Impulsive Behavior Short Scale–8 (I-8): A comprehensive
+    validation of the English-language adaptation. PLOS ONE, 17(9), e0273801. https://doi.org/10.1371/journal.pone.0273801;
+    der Artikel steht unter CC BY 4.0, für die Nutzung der Items gelten die ZIS-Bedingungen.'
+  en: 'GESIS/ZIS: free of charge for non-commercial research. For other purposes or a form other than
+    the documented one, ask the authors for permission. Cite the ZIS documentation as the source in all
+    resulting work. English version: Groskurth, K., Nießen, D., Rammstedt, B., & Lechner, C. M. (2022).
+    The Impulsive Behavior Short Scale–8 (I-8): A comprehensive validation of the English-language adaptation.
+    PLOS ONE, 17(9), e0273801. https://doi.org/10.1371/journal.pone.0273801; the article is licensed under
+    CC BY 4.0, the ZIS terms apply to using the items.'
+authors:
+- family: Kovaleva
+- family: Beierlein
+- family: Kemper
+- family: Rammstedt
+year: 2014
+sources:
+- role: original
+  citation: Kovaleva, A., Beierlein, C., Kemper, C. J., & Rammstedt, B. (2014). Die Skala Impulsives-Verhalten-8
+    (I-8). Zusammenstellung sozialwissenschaftlicher Items und Skalen (ZIS).
+  doi: 10.6102/zis183
+licence:
+  wording: ZIS-noncommercial
+  distributable: false
+  permission_required: false
+  commercial: false
+tags:
+  status:
+  - validiert
+  quelle:
+  - GESIS ZIS
+  art:
+  - Persönlichkeit
+  thema:
+  - Impulsivität
+  fach:
+  - Psychologie
+  bezug:
+  - 'Person: stabil'
+family: null
+structure:
+  type: likert
+  code: I8
+  config:
+    points: 5
+    labeling: full
+    label_display: once
+    randomize: true
+    statements:
+    - id: s1
+      code: I8_1
+      reverse: false
+      subscale: Dringlichkeit
+    - id: s2
+      code: I8_2
+      reverse: false
+      subscale: Dringlichkeit
+    - id: s3
+      code: I8_3
+      reverse: false
+      subscale: Absicht
+    - id: s4
+      code: I8_4
+      reverse: false
+      subscale: Absicht
+    - id: s5
+      code: I8_5
+      reverse: false
+      subscale: Ausdauer
+    - id: s6
+      code: I8_6
+      reverse: false
+      subscale: Ausdauer
+    - id: s7
+      code: I8_7
+      reverse: false
+      subscale: Risikobereitschaft
+    - id: s8
+      code: I8_8
+      reverse: false
+      subscale: Risikobereitschaft
+  labels:
+    de:
+    - trifft gar nicht zu
+    - trifft wenig zu
+    - trifft etwas zu
+    - trifft ziemlich zu
+    - trifft voll und ganz zu
+    en:
+    - doesn't apply at all
+    - applies a bit
+    - applies somewhat
+    - applies mostly
+    - applies completely
+languages:
+  de:
+    status: validated
+    wording: overlay
+    sha256: sha256:65aa2aed98f858361a70523b17bd0ddff12f3575c6852328d16c05c7f44b2a83
+  en:
+    status: validated
+    wording: overlay
+    sha256: sha256:c3e9568e1ddfdb4da513ba17157572ed1c3a5315198038528b3fe00a97074bb7
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

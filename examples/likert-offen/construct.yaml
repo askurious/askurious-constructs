@@ -1,0 +1,61 @@
+# Beispiel: Likert-Skala mit offen lizenziertem Wortlaut (Wortlaut in wording/<Sprache>.yaml).
+# Example: Likert scale with openly licensed wording (wording in wording/<language>.yaml).
+# Neu anlegen / create: python tools/new.py likert-offen meinkey
+format: 1
+id: ask:beispiel_likert_offen
+key: beispiel_likert_offen       # nie mehr ändern / never change it
+version: "1.0"                   # Haupt = Struktur, Neben = Wortlaut / major = structure, minor = wording
+status: review                   # review | verified | retired
+kind: scale                      # scale | standard_question
+requires: "2026.11"              # ab welcher Askurious-Version / lowest Askurious release
+name:
+  de: Beispielskala Vertrauen in Assistenzroboter
+  en: Example scale trust in assistive robots
+short:
+  de: 3 Aussagen, 5 Stufen; Vertrauen in einen Assistenzroboter
+  en: 3 statements, 5 points; trust in an assistive robot
+description:
+  de: Erfundenes Beispiel, zeigt den Aufbau einer offenen Likert-Skala.
+  en: Invented example showing how an open Likert scale is laid out.
+scoring:
+  de: Skalenwert = Mittelwert der 3 Items (1 bis 5); Item 3 ist im Export bereits rekodiert.
+  en: Scale score = mean of the 3 items (1 to 5); item 3 is already recoded in the export.
+notes:
+  de: "Lizenz: CC BY 4.0, frei nutzbar mit Quellenangabe."
+  en: "Licence: CC BY 4.0, free to use with attribution."
+authors:
+  - {family: Muster, given: Erika}
+year: 2026
+sources:
+  - role: original
+    citation: "Muster, E. (2026). Eine Beispielskala. Beispielzeitschrift, 1(1), 1–10."
+    doi: 10.1234/beispiel.2026.1
+licence:
+  wording: CC-BY-4.0            # Schlüssel aus schema/vocab/licences.yaml
+  distributable: true           # Wortlaut darf ins Repository / wording may be in the repository
+  permission_required: false    # Einzelfreigabe je Studie / permission per study
+  commercial: true
+tags:
+  status: [validiert]
+  art: [Einstellung]
+  thema: [Technik, Vertrauen]
+  fach: [Psychologie]
+  bezug: ["Gegenstand"]
+family: null
+structure:                      # Askurious-Elementformat / Askurious element format
+  type: likert
+  code: BVA
+  config:
+    points: 5
+    labeling: full
+    label_display: once
+    randomize: true
+    statements:
+      - {id: s1, code: BVA_1, reverse: false}
+      - {id: s2, code: BVA_2, reverse: false}
+      - {id: s3, code: BVA_3, reverse: true}
+languages:
+  de: {status: source, wording: repo}
+  en: {status: working, wording: repo}
+versions:
+  - {version: "1.0", date: "2026-11-09", note: Erste Fassung / first version}

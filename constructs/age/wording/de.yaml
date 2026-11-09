@@ -1,0 +1,5 @@
+for: ask:age@1.0
+question: Wie alt sind Sie?
+prefix: ''
+suffix: Jahre
+validation_message: ''

@@ -1,0 +1,202 @@
+# General Decision-Making Style (GDMS)
+# Wortlaut: nicht im Repository (Lizenz), nur der Hash je Sprache
+format: 1
+id: ask:gdms
+key: gdms
+version: '1.0'
+status: review
+kind: scale
+requires: '2026.11'
+name:
+  de: General Decision-Making Style (GDMS)
+  en: General Decision-Making Style (GDMS)
+short:
+  de: '25 Aussagen, 5 Stufen; fünf Entscheidungsstile: rational, intuitiv, abhängig, vermeidend, spontan'
+  en: '25 statements, 5 points; five decision-making styles: rational, intuitive, dependent, avoidant,
+    spontaneous'
+description:
+  de: 'Erfasst, wie eine Person gewöhnlich wichtige Entscheidungen trifft, in fünf Stilen mit je fünf
+    Items: rational (Informationen suchen, Optionen logisch abwägen), intuitiv (Gefühl und Ahnung), abhängig
+    (Rat und Unterstützung anderer), vermeidend (Aufschieben) und spontan (schnell, aus dem Moment). Die
+    Stile schließen sich nicht aus; Personen nutzen meist mehrere. Interne Konsistenz im Original .68
+    bis .94.'
+  en: 'Measures how a person usually makes important decisions, in five styles with five items each: rational
+    (searching for information, weighing options logically), intuitive (feelings and hunches), dependent
+    (advice and support of others), avoidant (putting decisions off) and spontaneous (quick, on the spur
+    of the moment). The styles do not exclude each other; most people use several. Internal consistency
+    in the original .68 to .94.'
+scoring:
+  de: 'Fünf Skalenwerte als Mittelwert je fünf Items (1 bis 5): rational (Items 1, 6, 11, 16, 21), intuitiv
+    (2, 7, 12, 17, 22), abhängig (3, 8, 13, 18, 23), vermeidend (4, 9, 14, 19, 24), spontan (5, 10, 15,
+    20, 25). Keine Umpolung; kein Gesamtwert, die Stile werden getrennt ausgewertet.'
+  en: 'Five scale scores as the mean of five items each (1 to 5): rational (items 1, 6, 11, 16, 21), intuitive
+    (2, 7, 12, 17, 22), dependent (3, 8, 13, 18, 23), avoidant (4, 9, 14, 19, 24), spontaneous (5, 10,
+    15, 20, 25). No reversed items; no total score, the styles are analysed separately.'
+notes:
+  de: '© 1995 SAGE Publications. Eintrag in APA PsycTests: https://doi.org/10.1037/t08399-000. Neue Nutzung
+    und Katalogzugriff nur mit dokumentierter, vom Betreiber geprüfter Berechtigung für Person, Studie
+    und Sprachfassung. Anmeldung allein genügt nicht; keine allgemeine Weitergabe. Quelle immer angeben.
+    Nur Englisch: Eine validierte deutsche Fassung der vollständigen Skala gibt es nicht (Fischer, Soyez
+    & Gurtner, 2015, haben eine 13-Item-Fassung für Patientenentscheidungen validiert, die nicht dieselbe
+    Skala ist); eine eigene Übersetzung ist nicht validiert. Nur die Endpunkte sind beschriftet (Original:
+    5 Stufen von „strongly disagree“ bis „strongly agree“). Aussagen in zufälliger Reihenfolge; im Original
+    wechseln sich die Stile der Reihe nach ab.'
+  en: '© 1995 SAGE Publications. Record in APA PsycTests: https://doi.org/10.1037/t08399-000. New use
+    and catalogue access require documented, operator-checked permission covering the account, study and
+    language version. Signing in alone is insufficient; no general distribution. Always cite the source.
+    English only: there is no validated German version of the full scale (Fischer, Soyez & Gurtner, 2015,
+    validated a 13-item version for patient decisions, which is not the same scale); a translation of
+    your own is not validated. Only the endpoints are labelled (original: 5 points from “strongly disagree”
+    to “strongly agree”). Statements in random order; in the original the styles take turns.'
+authors:
+- family: Scott
+- family: Bruce
+year: 1995
+sources:
+- role: original
+  citation: 'Scott, S. G., & Bruce, R. A. (1995). Decision-making style: The development and assessment
+    of a new measure. Educational and Psychological Measurement, 55(5), 818–831.'
+  doi: 10.1177/0013164495055005017
+licence:
+  wording: publisher-copyright
+  distributable: false
+  permission_required: true
+  commercial: false
+tags:
+  status:
+  - validiert
+  quelle:
+  - APA PsycTests
+  art:
+  - Persönlichkeit
+  thema:
+  - Entscheidungsstil
+  fach:
+  - Psychologie
+  bezug:
+  - 'Person: stabil'
+family: null
+structure:
+  type: likert
+  code: GDMS
+  config:
+    points: 5
+    labeling: endpoints
+    label_display: once
+    randomize: true
+    statements:
+    - id: s1
+      code: GDMS_1
+      reverse: false
+      subscale: Rational
+    - id: s2
+      code: GDMS_2
+      reverse: false
+      subscale: Intuitive
+    - id: s3
+      code: GDMS_3
+      reverse: false
+      subscale: Dependent
+    - id: s4
+      code: GDMS_4
+      reverse: false
+      subscale: Avoidant
+    - id: s5
+      code: GDMS_5
+      reverse: false
+      subscale: Spontaneous
+    - id: s6
+      code: GDMS_6
+      reverse: false
+      subscale: Rational
+    - id: s7
+      code: GDMS_7
+      reverse: false
+      subscale: Intuitive
+    - id: s8
+      code: GDMS_8
+      reverse: false
+      subscale: Dependent
+    - id: s9
+      code: GDMS_9
+      reverse: false
+      subscale: Avoidant
+    - id: s10
+      code: GDMS_10
+      reverse: false
+      subscale: Spontaneous
+    - id: s11
+      code: GDMS_11
+      reverse: false
+      subscale: Rational
+    - id: s12
+      code: GDMS_12
+      reverse: false
+      subscale: Intuitive
+    - id: s13
+      code: GDMS_13
+      reverse: false
+      subscale: Dependent
+    - id: s14
+      code: GDMS_14
+      reverse: false
+      subscale: Avoidant
+    - id: s15
+      code: GDMS_15
+      reverse: false
+      subscale: Spontaneous
+    - id: s16
+      code: GDMS_16
+      reverse: false
+      subscale: Rational
+    - id: s17
+      code: GDMS_17
+      reverse: false
+      subscale: Intuitive
+    - id: s18
+      code: GDMS_18
+      reverse: false
+      subscale: Dependent
+    - id: s19
+      code: GDMS_19
+      reverse: false
+      subscale: Avoidant
+    - id: s20
+      code: GDMS_20
+      reverse: false
+      subscale: Spontaneous
+    - id: s21
+      code: GDMS_21
+      reverse: false
+      subscale: Rational
+    - id: s22
+      code: GDMS_22
+      reverse: false
+      subscale: Intuitive
+    - id: s23
+      code: GDMS_23
+      reverse: false
+      subscale: Dependent
+    - id: s24
+      code: GDMS_24
+      reverse: false
+      subscale: Avoidant
+    - id: s25
+      code: GDMS_25
+      reverse: false
+      subscale: Spontaneous
+  labels:
+    en:
+    - strongly disagree
+    - '2'
+    - '3'
+    - '4'
+    - strongly agree
+languages:
+  en:
+    status: source
+    wording: overlay
+    sha256: sha256:bafe2f1e943a19682ede3ae86b813a202bd9352ff0bebfb6031b85af919383bb
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

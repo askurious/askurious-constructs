@@ -1,0 +1,7 @@
+for: ask:ratswd_geb3@1.0
+question: Was your mother born in Germany?
+options:
+  '1': 'Yes'
+  '2': 'No'
+  '-1': Don't know
+  '-2': No answer

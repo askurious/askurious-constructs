@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/askurious/askurious-constructs/schema/manifest.schema.json",
+  "title": "Askurious construct catalogue manifest",
+  "description": "dist/manifest.json, built by tools/build.py and signed for each release (manifest.json.sig, minisign). Askurious instances read only this file.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["format", "release", "generated", "source", "constructs", "families", "retired"],
+  "properties": {
+    "format": {"const": 1},
+    "release": {"type": "string", "pattern": "^\\d{4}\\.\\d{2}\\.\\d+$"},
+    "generated": {"type": "string", "format": "date-time"},
+    "source": {"type": "string"},
+    "constructs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "construct.yaml (construct.schema.json) plus hash and wording",
+        "properties": {
+          "id": {"type": "string", "pattern": "^ask:[a-z][a-z0-9_]*$"},
+          "key": {"type": "string"},
+          "version": {"$ref": "construct.schema.json#/$defs/version"},
+          "status": {"enum": ["review", "verified", "retired"]},
+          "hash": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["structure", "wording"],
+            "properties": {
+              "structure": {"$ref": "construct.schema.json#/$defs/hash"},
+              "wording": {"type": "object", "additionalProperties": {"$ref": "construct.schema.json#/$defs/hash"}}
+            }
+          },
+          "wording": {
+            "type": "object",
+            "description": "language -> wording, only for wordings in the repository",
+            "additionalProperties": {"$ref": "wording.schema.json"}
+          }
+        },
+        "required": ["id", "key", "version", "status", "hash", "wording"]
+      }
+    },
+    "families": {"type": "array", "items": {"$ref": "family.schema.json"}},
+    "retired": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id"],
+        "properties": {"id": {"type": "string"}, "since": {"type": "string"}}
+      }
+    }
+  }
+}

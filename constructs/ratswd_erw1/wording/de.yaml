@@ -1,0 +1,15 @@
+for: ask:ratswd_erw1@1.0
+question: 'Bitte geben Sie an, was am ehesten auf Ihre jetzige Situation zutrifft.
+
+  <small>Hinweis: Nur eine Nennung möglich.</small>'
+options:
+  '1': Hauptberuflich erwerbstätig, Vollzeit
+  '2': Hauptberuflich erwerbstätig, Teilzeit
+  '3': Schüler/-in, Student/-in
+  '4': Altersrente, Pensionär/-in
+  '5': Dauerhaft erwerbsunfähig
+  '6': Hausarbeit, Betreuung von Kindern oder anderen Personen (Hausfrau / Hausmann)
+  '7': Zurzeit arbeitslos / auf Arbeitssuche
+  '8': Freiwilliger Wehrdienst, Bundesfreiwilligendienst, FSJ, FÖJ
+  '9': 'Aus anderen Gründen aktuell nicht (hauptberuflich) erwerbstätig, und zwar:'
+  '-1': Weiß nicht

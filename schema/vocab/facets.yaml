@@ -1,0 +1,178 @@
+# Facetten und Schlagwörter der Konstrukte, Deutsch und Englisch.
+# Facets and tags of the constructs, German and English. Key = stored German name.
+facets:
+  status:
+    de: Typ
+    en: Type
+  bezug:
+    de: Bezug
+    en: Refers to
+  quelle:
+    de: Quelle
+    en: Source
+  art:
+    de: Art
+    en: Kind
+  thema:
+    de: Thema
+    en: Topic
+  fach:
+    de: Fachgebiet
+    en: Discipline
+tags:
+  AI Literacy:
+    de: AI Literacy
+    en: AI Literacy
+  Alter:
+    de: Alter
+    en: Age
+  APA PsycTests:
+    de: APA PsycTests
+    en: APA PsycTests
+  Beruf:
+    de: Beruf
+    en: Occupation
+  Bewertung:
+    de: Bewertung
+    en: Evaluation
+  Bildung:
+    de: Bildung
+    en: Education
+  Datenqualität:
+    de: Datenqualität
+    en: Data quality
+  Demografie:
+    de: Demografie
+    en: Demographics
+  Einkommen:
+    de: Einkommen
+    en: Income
+  Einstellung:
+    de: Einstellung
+    en: Attitude
+  Entscheidungsstil:
+    de: Entscheidungsstil
+    en: Decision-making style
+  Erwerbstätigkeit:
+    de: Erwerbstätigkeit
+    en: Employment
+  Familienstand:
+    de: Familienstand
+    en: Marital status
+  Framing:
+    de: Framing
+    en: Framing
+  Gegenstand:
+    de: Gegenstand
+    en: Object rated
+  Gender:
+    de: Gender
+    en: Gender
+  GESIS ZIS:
+    de: GESIS ZIS
+    en: GESIS ZIS
+  Haushalt:
+    de: Haushalt
+    en: Household
+  HCI:
+    de: HCI
+    en: HCI
+  Impulsivität:
+    de: Impulsivität
+    en: Impulsivity
+  Kochen:
+    de: Kochen
+    en: Cooking
+  Kognition:
+    de: Kognition
+    en: Cognition
+  Kommunikationswissenschaft:
+    de: Kommunikationswissenschaft
+    en: Communication science
+  Kontrollüberzeugung:
+    de: Kontrollüberzeugung
+    en: Locus of control
+  Künstliche Intelligenz:
+    de: Künstliche Intelligenz
+    en: Artificial intelligence
+  Medien:
+    de: Medien
+    en: Media
+  Medienbewertung:
+    de: Medienbewertung
+    en: Media evaluation
+  Migration:
+    de: Migration
+    en: Migration
+  'Person: stabil':
+    de: 'Person: stabil'
+    en: 'Person: stable'
+  'Person: veränderlich':
+    de: 'Person: veränderlich'
+    en: 'Person: changeable'
+  Persönlichkeit:
+    de: Persönlichkeit
+    en: Personality
+  Psychologie:
+    de: Psychologie
+    en: Psychology
+  RatSWD/KonsortSWD:
+    de: RatSWD/KonsortSWD
+    en: RatSWD/KonsortSWD
+  Risiko:
+    de: Risiko
+    en: Risk
+  Risikobereitschaft:
+    de: Risikobereitschaft
+    en: Risk proneness
+  Selbstwirksamkeit:
+    de: Selbstwirksamkeit
+    en: Self-efficacy
+  Sorgfalt:
+    de: Sorgfalt
+    en: Care taken
+  Soziologie:
+    de: Soziologie
+    en: Sociology
+  Staatsangehörigkeit:
+    de: Staatsangehörigkeit
+    en: Citizenship
+  Standardfrage:
+    de: Standardfrage
+    en: standard question
+  Technik:
+    de: Technik
+    en: Technology
+  Technikaffinität:
+    de: Technikaffinität
+    en: Affinity for technology
+  Technikakzeptanz:
+    de: Technikakzeptanz
+    en: Technology acceptance
+  Technikbereitschaft:
+    de: Technikbereitschaft
+    en: Technology commitment
+  Umwelt:
+    de: Umwelt
+    en: Environment
+  Umweltbewusstsein:
+    de: Umweltbewusstsein
+    en: Environmental awareness
+  validiert:
+    de: validierte Skala
+    en: validated scale
+  Verhaltensabsicht:
+    de: Verhaltensabsicht
+    en: Behavioural intention
+  Vertrauen:
+    de: Vertrauen
+    en: Trust
+  Wahrnehmung:
+    de: Wahrnehmung
+    en: Perception
+  Wirtschaftsinformatik:
+    de: Wirtschaftsinformatik
+    en: Information systems
+  Wissen:
+    de: Wissen
+    en: Knowledge

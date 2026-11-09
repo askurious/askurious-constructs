@@ -1,0 +1,107 @@
+# Allgemeine Selbstwirksamkeit Kurzskala (ASKU)
+# Wortlaut: nicht im Repository (Lizenz), nur der Hash je Sprache
+format: 1
+id: ask:asku
+key: asku
+version: '1.0'
+status: verified
+kind: scale
+requires: '2026.11'
+name:
+  de: Allgemeine Selbstwirksamkeit Kurzskala (ASKU)
+  en: General Self-Efficacy Short Scale (ASKU)
+short:
+  de: 3 Aussagen, 5 Stufen; Erwartung, Schwierigkeiten aus eigener Kraft zu bewältigen
+  en: 3 statements, 5 points; expectation of coping with difficulties on one's own
+description:
+  de: Ökonomisches Instrument zur Erfassung individueller Kompetenzerwartungen, mit Schwierigkeiten und
+    Hindernissen im täglichen Leben umgehen zu können. McDonalds Omega .81 bis .87.
+  en: Economical instrument measuring the individual expectation of being able to deal with difficulties
+    and obstacles in daily life. McDonald's omega .81 to .87.
+scoring:
+  de: Skalenwert = Mittelwert der 3 Items (1 bis 5).
+  en: Scale score = mean of the 3 items (1 to 5).
+notes:
+  de: 'GESIS/ZIS: kostenfrei für nichtkommerzielle Forschungszwecke. Für andere Zwecke oder eine andere
+    als die dokumentierte Form ist das Einverständnis der Autorinnen und Autoren einzuholen. Die ZIS-Dokumentation
+    ist in allen resultierenden Arbeiten als Quelle anzugeben. Englische Fassung (eigene Quelle, Bedingungen:
+    CC BY-NC-SA 4.0): GSE-3: Doll, E. S., Nießen, D., Schmidt, I., Rammstedt, B., & Lechner, C. M. (2021).
+    The General Self-Efficacy Short Scale-3 (GSE-3). ZIS. https://doi.org/10.6102/zis294'
+  en: 'GESIS/ZIS: free of charge for non-commercial research. For other purposes or a form other than
+    the documented one, ask the authors for permission. Cite the ZIS documentation as the source in all
+    resulting work. English version (a source of its own, terms: CC BY-NC-SA 4.0, adaptations only under
+    the same licence): GSE-3: Doll, E. S., Nießen, D., Schmidt, I., Rammstedt, B., & Lechner, C. M. (2021).
+    The General Self-Efficacy Short Scale-3 (GSE-3). ZIS. https://doi.org/10.6102/zis294'
+authors:
+- family: Beierlein
+- family: Kovaleva
+- family: Kemper
+- family: Rammstedt
+year: 2014
+sources:
+- role: original
+  citation: Beierlein, C., Kovaleva, A., Kemper, C. J., & Rammstedt, B. (2014). Allgemeine Selbstwirksamkeit
+    Kurzskala (ASKU). Zusammenstellung sozialwissenschaftlicher Items und Skalen (ZIS).
+  doi: 10.6102/zis35
+licence:
+  wording: ZIS-noncommercial
+  distributable: false
+  permission_required: false
+  commercial: false
+tags:
+  status:
+  - validiert
+  quelle:
+  - GESIS ZIS
+  art:
+  - Persönlichkeit
+  thema:
+  - Selbstwirksamkeit
+  fach:
+  - Psychologie
+  bezug:
+  - 'Person: stabil'
+family: null
+structure:
+  type: likert
+  code: ASKU
+  config:
+    points: 5
+    labeling: full
+    label_display: once
+    randomize: true
+    statements:
+    - id: s1
+      code: ASKU_1
+      reverse: false
+    - id: s2
+      code: ASKU_2
+      reverse: false
+    - id: s3
+      code: ASKU_3
+      reverse: false
+  labels:
+    de:
+    - trifft gar nicht zu
+    - trifft wenig zu
+    - trifft etwas zu
+    - trifft ziemlich zu
+    - trifft voll und ganz zu
+    en:
+    - doesn't apply at all
+    - applies a bit
+    - applies somewhat
+    - applies mostly
+    - applies completely
+languages:
+  de:
+    status: validated
+    wording: overlay
+    sha256: sha256:42b0cebad6c2b98548aa1687a63a6085bd3937ad7654ef7d4c666d90e0deb4df
+  en:
+    status: validated
+    wording: overlay
+    sha256: sha256:1374f33205221df5a4a5d2fe04b95cbf569b37911b0d6197ba812989d21a90ea
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

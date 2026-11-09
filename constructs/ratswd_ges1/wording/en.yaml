@@ -1,0 +1,6 @@
+for: ask:ratswd_ges1@1.0
+question: What is your sex?
+options:
+  '1': male
+  '2': female
+  '3': diverse

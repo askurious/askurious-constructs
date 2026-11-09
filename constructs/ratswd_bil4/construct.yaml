@@ -1,0 +1,94 @@
+# Höchster Ausbildungsabschluss (RatSWD BIL_4)
+# Wortlaut: wording/<Sprache>.yaml
+format: 1
+id: ask:ratswd_bil4
+key: ratswd_bil4
+version: '1.0'
+status: review
+kind: standard_question
+requires: '2026.11'
+name:
+  de: Höchster Ausbildungsabschluss (RatSWD BIL_4)
+  en: Highest vocational qualification (RatSWD BIL_4)
+short:
+  de: Acht Stufen von „kein Abschluss“ bis Promotion
+  en: Eight levels from “none” to doctorate
+description:
+  de: 'Minimalversion des RatSWD-Standardfragenkatalogs (2023), mit KonsortSWD entwickelt und vorgetestet.
+    Höchster beruflicher oder Hochschulabschluss in acht Stufen. Im Katalog gefiltert: nur wer nicht mehr
+    zur Schule geht.'
+  en: 'Minimal version of the RatSWD catalogue of standard questions (2023), developed with KonsortSWD
+    and pretested. Highest vocational or university qualification in eight levels. Filtered in the catalogue:
+    only for people no longer at school.'
+scoring:
+  de: 1 bis 8 aufsteigend. −1 = weiß nicht (fehlend).
+  en: 1 to 8 ascending. −1 = don't know (missing).
+notes:
+  de: 'Lizenz: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), frei nutzbar mit Quellenangabe;
+    Änderungen kennzeichnen (das Codebuch nennt Abweichungen vom Wortlaut). „Weiß nicht“ (−1) und „Keine
+    Angabe“ (−2) zählen als fehlend. Standardfrage: nicht Teil der gemeinsamen Auswertung der Konstrukte
+    (Pool). Englische Fassung: inoffizielle Arbeitsübersetzung.'
+  en: 'Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), free to use with attribution;
+    mark changes (the codebook lists deviations from the wording). “Don''t know” (−1) and “No answer”
+    (−2) count as missing. Standard question: not part of the pooled analysis of the constructs (pool).
+    English version: unofficial working translation.'
+authors:
+- name: RatSWD
+year: 2023
+sources:
+- role: original
+  citation: Rat für Sozial- und Wirtschaftsdaten. (2023). Standardfragenkatalog zur Erhebung soziodemographischer
+    und krisenbezogener Variablen (2. Aufl.; RatSWD Output Series, 7. Berufungsperiode Nr. 4b). RatSWD.
+  doi: 10.17620/02671.76
+licence:
+  wording: CC-BY-4.0
+  distributable: true
+  permission_required: false
+  commercial: true
+tags:
+  status:
+  - Standardfrage
+  quelle:
+  - RatSWD/KonsortSWD
+  art:
+  - Demografie
+  thema:
+  - Bildung
+  bezug:
+  - 'Person: veränderlich'
+family: null
+structure:
+  type: single_choice
+  code: BIL_4
+  config:
+    options:
+    - id: o1
+      code: '1'
+    - id: o2
+      code: '2'
+    - id: o3
+      code: '3'
+    - id: o4
+      code: '4'
+    - id: o5
+      code: '5'
+    - id: o6
+      code: '6'
+    - id: o7
+      code: '7'
+    - id: o8
+      code: '8'
+    - id: o9
+      code: '-1'
+      missing: true
+    layout: vertical
+languages:
+  de:
+    status: source
+    wording: repo
+  en:
+    status: working
+    wording: repo
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

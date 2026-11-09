@@ -1,0 +1,64 @@
+# Alter
+# Wortlaut: wording/<Sprache>.yaml
+format: 1
+id: ask:age
+key: age
+version: '1.0'
+status: review
+kind: standard_question
+requires: '2026.11'
+name:
+  de: Alter
+  en: Age
+short:
+  de: Alter in Jahren (ganze Zahl, 10–120)
+  en: Age in years (whole number, 10–120)
+description:
+  de: Alter in ganzen Jahren als Freitext mit Zahlenprüfung (10 bis 120), „Jahre“ hinter dem Feld. Einheitlich
+    erhoben, damit Studien in der Metaanalyse zusammengeführt werden können.
+  en: Age in whole years as free text with a number check (10 to 120), “years” after the field. Asked
+    the same way everywhere so that surveys can be combined in a meta-analysis.
+scoring:
+  de: Ganze Jahre; keine Rekodierung.
+  en: Whole years; no recoding.
+notes:
+  de: Eigene Formulierung von Askurious.
+  en: Own wording of Askurious.
+authors: []
+year: null
+sources: []
+licence:
+  wording: CC-BY-4.0
+  distributable: true
+  permission_required: false
+  commercial: true
+tags:
+  status:
+  - Standardfrage
+  art:
+  - Demografie
+  thema:
+  - Alter
+  bezug:
+  - 'Person: stabil'
+family: null
+structure:
+  type: text_input
+  code: age
+  config:
+    multiline: false
+    max_length: 3
+    validation: integer
+    min: 10
+    max: 120
+    pattern: ''
+languages:
+  de:
+    status: source
+    wording: repo
+  en:
+    status: source
+    wording: repo
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

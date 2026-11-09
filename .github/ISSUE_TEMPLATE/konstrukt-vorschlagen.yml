@@ -1,0 +1,61 @@
+name: Konstrukt vorschlagen / Suggest a construct
+description: Eine Skala oder Standardfrage für den Katalog vorschlagen, ohne Git. / Suggest a scale or standard question for the catalogue, without Git.
+title: "Konstrukt: "
+labels: ["konstrukt-vorschlag"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke für den Vorschlag! Wir (Ralf Philipsen, Philipp Brauner) prüfen ihn und legen bei Eignung einen Pull Request an.
+        Bitte keinen lizenzierten Wortlaut hier einfügen, wenn die Lizenz die Weitergabe nicht erlaubt.
+
+        Thanks for the suggestion! We (Ralf Philipsen, Philipp Brauner) review it and open a pull request if it fits.
+        Please do not paste licensed wording here if the licence does not allow redistribution.
+  - type: input
+    id: name
+    attributes:
+      label: Name (Deutsch und Englisch) / Name (German and English)
+      placeholder: "Vertrauen in Assistenzroboter / Trust in assistive robots"
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Quelle mit DOI / Source with DOI
+      description: Autorinnen und Autoren, Jahr, Titel, DOI / authors, year, title, DOI
+    validations:
+      required: true
+  - type: dropdown
+    id: licence
+    attributes:
+      label: Lizenz des Wortlauts / Wording licence
+      options:
+        - CC BY 4.0
+        - CC0 1.0
+        - GESIS/ZIS (nicht kommerziell / non-commercial)
+        - Verlag, Freigabe nötig / publisher, permission needed
+        - unbekannt / unknown
+    validations:
+      required: true
+  - type: textarea
+    id: structure
+    attributes:
+      label: Aufbau / Structure
+      description: Elementart (Likert, semantisches Differential, Einfachauswahl …), Stufen, Items, Subskalen, umgepolte Items / element type (Likert, semantic differential, single choice …), points, items, subscales, reversed items
+    validations:
+      required: true
+  - type: textarea
+    id: wording
+    attributes:
+      label: Wortlaut (nur bei offener Lizenz) / Wording (open licence only)
+  - type: textarea
+    id: scoring
+    attributes:
+      label: Auswertung / Scoring
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rechte / Rights
+      options:
+        - label: Ich darf den hier eingefügten Wortlaut unter der genannten Lizenz weitergeben. / I may redistribute the wording pasted here under the stated licence.
+          required: true

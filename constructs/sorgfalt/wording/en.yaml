@@ -1,0 +1,6 @@
+for: ask:sorgfalt@1.0
+question: 'One last honest question: Did you answer the questions attentively enough for us to use your
+  answers? Your answer has no consequences for you whatsoever.'
+options:
+  '1': Yes, my answers can be used.
+  '0': No, my answers should not be used.

@@ -1,0 +1,126 @@
+# Kognitive und Affektive Medienbewertungsskala
+# Wortlaut: wording/<Sprache>.yaml
+format: 1
+id: ask:kamb
+key: kamb
+version: '2.0'
+status: verified
+kind: scale
+requires: '2026.11'
+name:
+  de: Kognitive und Affektive Medienbewertungsskala
+  en: Cognitive and Affective Media Evaluation Scale
+short:
+  de: 8 Begriffspaare, 6 Stufen; affektive und kognitive Bewertung eines Medienbeitrags
+  en: 8 word pairs, 6 points; affective and cognitive evaluation of a media item
+description:
+  de: 'Erfasst, wie ein Medienbeitrag (z. B. ein Zeitungsartikel) wahrgenommen wird, in zwei Dimensionen:
+    affektiv (negativ – positiv, langweilig – interessant, kaltherzig – warmherzig, beruhigend – beängstigend)
+    und kognitiv (professionell – amateurhaft, verwirrend – verständlich, überzeugend – zweifelhaft, neutral
+    – parteiisch). Entwickelt als Manipulationscheck für Framing-Experimente; positiv und negativ geframte
+    Artikel unterschieden sich deutlich, am stärksten affektiv.'
+  en: 'Measures how a media item (e.g. a newspaper article) is perceived, in two dimensions: affective
+    (negative – positive, boring – interesting, cold-hearted – warm-hearted, reassuring – frightening)
+    and cognitive (professional – amateurish, confusing – understandable, convincing – doubtful, neutral
+    – biased). Developed as a manipulation check for framing experiments; positively and negatively framed
+    articles differed clearly, most strongly on the affective dimension.'
+scoring:
+  de: 'Zwei Skalenwerte als Mittelwert je vier Paare (1 bis 6): affektiv (Paare 2, 5, 6, 8) und kognitiv
+    (1, 3, 4, 7). Die Paare mit dem positiven Pol links (1, 4, 5, 7) sind im Export bereits rekodiert;
+    hohe Werte stehen überall für eine positive Bewertung. Cronbachs Alpha in den öffentlichen, ungefilterten
+    Daten der Studie (n = 1512, eigene Berechnung): affektiv .71, kognitiv .68, alle acht Paare .78.'
+  en: 'Two scale scores as the mean of four pairs each (1 to 6): affective (pairs 2, 5, 6, 8) and cognitive
+    (1, 3, 4, 7). The pairs with the positive pole on the left (1, 4, 5, 7) are already recoded in the
+    export; high values stand for a positive evaluation throughout. Cronbach''s alpha in the study''s
+    public, unfiltered data (n = 1512, own calculation): affective .71, cognitive .68, all eight pairs
+    .78.'
+notes:
+  de: 'Lizenz: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), frei nutzbar und anpassbar mit
+    Quellenangabe und Hinweis auf Änderungen. Deutscher Wortlaut und Polung wie erhoben (Variablenlabels
+    der veröffentlichten Daten auf OSF). Englische Paare aus der Publikation, englische Instruktion übersetzt.
+    „den Artikel“ in der Instruktion an das Medium anpassen (z. B. „das Video“). Paare in zufälliger Reihenfolge
+    wie im Original.'
+  en: 'Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), free to use and adapt with attribution
+    and a note of changes. German wording and polarity as collected (variable labels of the published
+    data on OSF). English pairs from the publication, English instruction translated. Adapt “the article”
+    in the instruction to the medium (e.g. “the video”). Pairs in random order as in the original.'
+authors:
+- family: Brauner
+- family: Glawe
+- family: Vervier
+- family: Ziefle
+year: 2026
+sources:
+- role: original
+  citation: Brauner, P., Glawe, F., Vervier, L., & Ziefle, M. (2026). Media Framing Moderates Risk-Benefit
+    Perceptions and Value Tradeoffs in Human-Robot Collaboration. arXiv:2602.12785. https://arxiv.org/abs/2602.12785
+  doi: 10.48550/arXiv.2602.12785
+licence:
+  wording: CC-BY-4.0
+  distributable: true
+  permission_required: false
+  commercial: true
+tags:
+  status:
+  - validiert
+  art:
+  - Bewertung
+  thema:
+  - Medien
+  - Framing
+  - Medienbewertung
+  fach:
+  - Kommunikationswissenschaft
+  bezug:
+  - Gegenstand
+family: null
+structure:
+  type: semantic
+  code: KAMB
+  config:
+    points: 6
+    numbers: false
+    randomize: true
+    pairs:
+    - id: p1
+      code: KAMB_1
+      reverse: true
+      subscale: kognitiv
+    - id: p2
+      code: KAMB_2
+      reverse: false
+      subscale: affektiv
+    - id: p3
+      code: KAMB_3
+      reverse: false
+      subscale: kognitiv
+    - id: p4
+      code: KAMB_4
+      reverse: true
+      subscale: kognitiv
+    - id: p5
+      code: KAMB_5
+      reverse: true
+      subscale: affektiv
+    - id: p6
+      code: KAMB_6
+      reverse: false
+      subscale: affektiv
+    - id: p7
+      code: KAMB_7
+      reverse: true
+      subscale: kognitiv
+    - id: p8
+      code: KAMB_8
+      reverse: false
+      subscale: affektiv
+languages:
+  de:
+    status: source
+    wording: repo
+  en:
+    status: source
+    wording: repo
+versions:
+- version: '2.0'
+  note: Übernommen aus Askurious (seed_version 2) / taken over from Askurious

@@ -1,0 +1,71 @@
+name: release
+
+# Ein Tag JJJJ.MM.N (z. B. 2026.11.0) baut das Manifest, signiert es mit minisign
+# und hängt manifest.json und manifest.json.sig an das GitHub-Release.
+# A tag YYYY.MM.N builds the manifest, signs it with minisign and attaches
+# manifest.json and manifest.json.sig to the GitHub release.
+#
+# Secrets: MANIFEST_SIGNING_KEY = Inhalt der geheimen minisign-Schlüsseldatei (minisign -G),
+# MANIFEST_SIGNING_PASSWORD = ihr Passwort. Der öffentliche Schlüssel liegt als minisign.pub im Repository.
+# Secrets: MANIFEST_SIGNING_KEY = content of the secret minisign key file (minisign -G),
+# MANIFEST_SIGNING_PASSWORD = its password. The public key is minisign.pub in this repository.
+
+on:
+  push:
+    tags:
+      - "[0-9][0-9][0-9][0-9].[0-9][0-9].[0-9]*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          sudo apt-get update -q
+          sudo apt-get install -y -q minisign
+      - name: Check tag format
+        run: |
+          echo "${{ github.ref_name }}" | grep -Eq '^[0-9]{4}\.(0[1-9]|1[0-2])\.[0-9]+$' \
+            || { echo "Tag muss JJJJ.MM.N sein / tag must be YYYY.MM.N"; exit 1; }
+      - name: Validate
+        run: python tools/validate.py
+      - name: Build manifest
+        run: python tools/build.py --release "${{ github.ref_name }}"
+      - name: Sign manifest
+        env:
+          MANIFEST_SIGNING_KEY: ${{ secrets.MANIFEST_SIGNING_KEY }}
+          MANIFEST_SIGNING_PASSWORD: ${{ secrets.MANIFEST_SIGNING_PASSWORD }}
+        run: |
+          missing=""
+          [ -n "$MANIFEST_SIGNING_KEY" ] || missing="$missing MANIFEST_SIGNING_KEY"
+          [ -n "$MANIFEST_SIGNING_PASSWORD" ] || missing="$missing MANIFEST_SIGNING_PASSWORD"
+          if [ -n "$missing" ]; then
+            echo "::error::Secret fehlt / missing:$missing. Release nicht signiert, abgebrochen / not signed, stopped."
+            exit 1
+          fi
+          if [ ! -f minisign.pub ]; then
+            echo "::error::minisign.pub fehlt im Repository / is missing in the repository."
+            exit 1
+          fi
+          umask 077
+          printf '%s\n' "$MANIFEST_SIGNING_KEY" > "$RUNNER_TEMP/minisign.key"
+          trap 'rm -f "$RUNNER_TEMP/minisign.key"' EXIT
+          printf '%s\n' "$MANIFEST_SIGNING_PASSWORD" | minisign -S -s "$RUNNER_TEMP/minisign.key" \
+            -m dist/manifest.json -x dist/manifest.json.sig -t "askurious-constructs ${{ github.ref_name }}"
+          minisign -V -p minisign.pub -m dist/manifest.json -x dist/manifest.json.sig
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${{ github.ref_name }}" dist/manifest.json dist/manifest.json.sig \
+            --title "${{ github.ref_name }}" --notes-file <(python tools/build.py --notes "${{ github.ref_name }}")

@@ -1,0 +1,111 @@
+# Kurzskala Risikobereitschaft (R-1)
+# Wortlaut: nicht im Repository (Lizenz), nur der Hash je Sprache
+format: 1
+id: ask:r1
+key: r1
+version: '1.0'
+status: verified
+kind: scale
+requires: '2026.11'
+name:
+  de: Kurzskala Risikobereitschaft (R-1)
+  en: Risk Proneness Short Scale (R-1)
+short:
+  de: 1 Frage, 7 Stufen; allgemeine Neigung, Risiken einzugehen
+  en: 1 question, 7 points; general tendency to take risks
+description:
+  de: Erfasst die Risikobereitschaft, also die Neigung, Risiken einzugehen oder zu vermeiden, mit einer
+    einzigen Frage (unter 20 Sekunden). Für die deutschsprachige Allgemeinbevölkerung ab 18 Jahren entwickelt;
+    Retest-Reliabilität .74 (englische Fassung .76).
+  en: Measures risk proneness, the tendency to take or avoid risks, with a single question (under 20 seconds).
+    Developed for the German-speaking general population aged 18 and over; retest reliability .74 (English
+    version .76).
+scoring:
+  de: Skalenwert = Antwort auf die eine Frage (1 = gar nicht risikobereit bis 7 = sehr risikobereit);
+    keine Umpolung. Bei einem einzelnen Item gibt es keine interne Konsistenz (kein Cronbachs Alpha).
+  en: Scale score = the answer to the one question (1 = not at all willing to take risks to 7 = very willing
+    to take risks); no reverse coding. A single item has no internal consistency (no Cronbach's alpha).
+notes:
+  de: 'GESIS/ZIS: kostenfrei für nichtkommerzielle Forschungszwecke. Für andere Zwecke oder eine andere
+    als die dokumentierte Form ist das Einverständnis der Autorinnen und Autoren einzuholen. Die ZIS-Dokumentation
+    ist in allen resultierenden Arbeiten als Quelle anzugeben. Die englische Fassung (zis286) steht unter
+    CC BY-NC-SA 4.0; veränderte Fassungen davon dürfen nur unter derselben Lizenz weitergegeben werden.
+    Nur die Endpunkte der Skala sind beschriftet.'
+  en: 'GESIS/ZIS: free of charge for non-commercial research. For other purposes or a form other than
+    the documented one, ask the authors for permission. Cite the ZIS documentation as the source in all
+    resulting work. The English version (zis286) is licensed under CC BY-NC-SA 4.0; adapted versions may
+    be passed on only under the same licence. Only the endpoints of the scale are labelled.'
+authors:
+- family: Beierlein
+- family: Kovaleva
+- family: Kemper
+- family: Rammstedt
+year: 2015
+sources:
+- role: original
+  citation: 'Beierlein, C., Kovaleva, A., Kemper, C. J., & Rammstedt, B. (2015). Kurzskala zur Erfassung
+    der Risikobereitschaft (R-1). Zusammenstellung sozialwissenschaftlicher Items und Skalen (ZIS). https://doi.org/10.6102/zis236.
+    Englische Fassung: Nießen, D., Groskurth, K., Rammstedt, B., & Lechner, C. M. (2020). Risk Proneness
+    Short Scale (R-1). Zusammenstellung sozialwissenschaftlicher Items und Skalen (ZIS). https://doi.org/10.6102/zis286'
+  doi: 10.6102/zis236
+licence:
+  wording: ZIS-noncommercial
+  distributable: false
+  permission_required: false
+  commercial: false
+tags:
+  status:
+  - validiert
+  quelle:
+  - GESIS ZIS
+  art:
+  - Persönlichkeit
+  thema:
+  - Risiko
+  - Risikobereitschaft
+  fach:
+  - Psychologie
+  bezug:
+  - 'Person: stabil'
+family: null
+structure:
+  type: likert
+  code: R1
+  config:
+    points: 7
+    labeling: endpoints
+    label_display: once
+    randomize: true
+    statements:
+    - id: s1
+      code: R1_1
+      reverse: false
+  labels:
+    de:
+    - gar nicht risikobereit
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - sehr risikobereit
+    en:
+    - not at all willing to take risks
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - very willing to take risks
+languages:
+  de:
+    status: validated
+    wording: overlay
+    sha256: sha256:9ce7837bfa87d1898a3dfb69e95dcc6a474b8e5939b94b7ea458a66809bfcfa2
+  en:
+    status: validated
+    wording: overlay
+    sha256: sha256:a1563930902ade2c29586f7532d82da9eb3df8ca82416165b9a0b3996add1dbf
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

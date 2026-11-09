@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/askurious/askurious-constructs/schema/family.schema.json",
+  "title": "Askurious construct family",
+  "description": "families/<id>.yaml: short and long versions of one instrument, linked.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "members"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
+    "name": {"$ref": "construct.schema.json#/$defs/text"},
+    "members": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["key", "label"],
+        "properties": {
+          "key": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+          "label": {"$ref": "construct.schema.json#/$defs/text"}
+        }
+      }
+    }
+  }
+}

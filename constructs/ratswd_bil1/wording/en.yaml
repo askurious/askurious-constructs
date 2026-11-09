@@ -1,0 +1,13 @@
+for: ask:ratswd_bil1@1.0
+question: 'What is your highest general school-leaving qualification?
+
+  <small>Note: people with qualifications from abroad should choose category 2, 3 or 4.</small>'
+options:
+  '1': No school-leaving qualification (yet)
+  '2': Lower secondary school certificate (Hauptschulabschluss, Volksschulabschluss) or equivalent, GDR
+    polytechnic secondary school completed after grade 8 or 9
+  '3': Intermediate school certificate (Realschulabschluss, Mittlere Reife) or equivalent, GDR polytechnic
+    secondary school completed after grade 10
+  '4': Entrance qualification for universities of applied sciences or universities (Fachhochschulreife,
+    Abitur; also EOS or EOS with apprenticeship)
+  '-1': Don't know

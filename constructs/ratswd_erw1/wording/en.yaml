@@ -1,0 +1,16 @@
+for: ask:ratswd_erw1@1.0
+question: 'Please state what best describes your current situation.
+
+  <small>Note: only one answer possible.</small>'
+options:
+  '1': Employed in main job, full time
+  '2': Employed in main job, part time
+  '3': Pupil, student
+  '4': Old-age pension, retired civil servant
+  '5': Permanently unable to work
+  '6': Housework, caring for children or other people (housewife / househusband)
+  '7': Currently unemployed / looking for work
+  '8': Voluntary military service, Federal Volunteer Service, voluntary social or ecological year (FSJ,
+    FÖJ)
+  '9': 'Currently not employed (in a main job) for other reasons, namely:'
+  '-1': Don't know

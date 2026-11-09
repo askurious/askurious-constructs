@@ -1,0 +1,6 @@
+for: ask:sorgfalt@1.0
+question: 'Zum Schluss eine ehrliche Frage: Haben Sie die Fragen so aufmerksam beantwortet, dass wir Ihre
+  Antworten auswerten sollten? Ihre Antwort hat keinerlei Folgen für Sie.'
+options:
+  '1': Ja, meine Antworten können ausgewertet werden.
+  '0': Nein, meine Antworten sollten nicht ausgewertet werden.

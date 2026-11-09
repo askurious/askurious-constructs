@@ -1,0 +1,99 @@
+# Need for Cognition Kurzskala (NFC-K)
+# Wortlaut: nicht im Repository (Lizenz), nur der Hash je Sprache
+format: 1
+id: ask:nfck
+key: nfck
+version: '1.0'
+status: verified
+kind: scale
+requires: '2026.11'
+name:
+  de: Need for Cognition Kurzskala (NFC-K)
+  en: Need for Cognition Short Scale (NFC-K)
+short:
+  de: 4 Aussagen, 7 Stufen; Freude am und Engagement beim Nachdenken
+  en: 4 statements, 7 points; enjoyment of and engagement in thinking
+description:
+  de: Misst Need for Cognition mit vier Items zu den Facetten Engagement und Freude. Geeignet ab dem Jugendalter;
+    Cronbachs Alpha .51 bis .54 (bei vier Items niedrig).
+  en: Measures need for cognition with four items on the facets engagement and enjoyment. Suitable from
+    adolescence on; Cronbach's alpha .51 to .54 (low with four items).
+scoring:
+  de: Skalenwert = Mittelwert der 4 Items (1 bis 7); Items 1 und 4 sind im Export bereits rekodiert.
+  en: Scale score = mean of the 4 items (1 to 7); items 1 and 4 are already recoded in the export.
+notes:
+  de: 'GESIS/ZIS: kostenfrei für nichtkommerzielle Forschungszwecke. Für andere Zwecke oder eine andere
+    als die dokumentierte Form ist das Einverständnis der Autorinnen und Autoren einzuholen. Die ZIS-Dokumentation
+    ist in allen resultierenden Arbeiten als Quelle anzugeben. Nur deutsche Fassung: Für die englischen
+    Items dokumentiert ZIS keine Antwortskala.'
+  en: 'GESIS/ZIS: free of charge for non-commercial research. For other purposes or a form other than
+    the documented one, ask the authors for permission. Cite the ZIS documentation as the source in all
+    resulting work. German version only: ZIS documents no answer scale for the English items.'
+authors:
+- family: Beißert
+- family: Köhler
+- family: Rempel
+- family: Beierlein
+year: 2015
+sources:
+- role: original
+  citation: Beißert, H., Köhler, M., Rempel, M., & Beierlein, C. (2015). Kurzskala Need for Cognition
+    NFC-K. Zusammenstellung sozialwissenschaftlicher Items und Skalen (ZIS).
+  doi: 10.6102/zis230
+licence:
+  wording: ZIS-noncommercial
+  distributable: false
+  permission_required: false
+  commercial: false
+tags:
+  status:
+  - validiert
+  quelle:
+  - GESIS ZIS
+  art:
+  - Persönlichkeit
+  thema:
+  - Kognition
+  fach:
+  - Psychologie
+  bezug:
+  - 'Person: stabil'
+family: null
+structure:
+  type: likert
+  code: NFC
+  config:
+    points: 7
+    labeling: endpoints
+    label_display: once
+    randomize: true
+    statements:
+    - id: s1
+      code: NFC_1
+      reverse: true
+    - id: s2
+      code: NFC_2
+      reverse: false
+    - id: s3
+      code: NFC_3
+      reverse: false
+    - id: s4
+      code: NFC_4
+      reverse: true
+  labels:
+    de:
+    - trifft überhaupt nicht zu
+    - '2'
+    - '3'
+    - weder noch
+    - '5'
+    - '6'
+    - trifft ganz genau zu
+languages:
+  de:
+    status: validated
+    wording: overlay
+    sha256: sha256:757ff0db2c1d26a63b86d9aeb7fbe9bdac81156ae6c676412eda97d8584ae7d7
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

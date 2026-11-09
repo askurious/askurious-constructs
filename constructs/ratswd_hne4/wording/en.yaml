@@ -1,0 +1,9 @@
+for: ask:ratswd_hne4@1.0
+question: Can you now also tell me whether it is less than 500 euros, 500 to under 1,000 euros or 1,000
+  euros or more per month?
+options:
+  '1': less than 500 euros
+  '2': 500 to under 1,000 euros
+  '3': 1,000 euros to under 1,500 euros
+  '-1': Don't know
+  '-2': No answer

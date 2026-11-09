@@ -1,0 +1,10 @@
+for: ask:ratswd_hhg1@1.0
+question: 'How many people live permanently in your household, including yourself? The household includes
+  everyone who lives and keeps house together here.
+
+  <small>Note: please also think of all children living in the household.</small>'
+options:
+  '1': One person
+  '2': 'Several people, namely:'
+  '-1': Don't know
+  '-2': No answer

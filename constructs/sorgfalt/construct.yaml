@@ -1,0 +1,88 @@
+# Sorgfalt der Teilnahme (Selbstauskunft)
+# Wortlaut: wording/<Sprache>.yaml
+format: 1
+id: ask:sorgfalt
+key: sorgfalt
+version: '1.0'
+status: review
+kind: standard_question
+requires: '2026.11'
+name:
+  de: Sorgfalt der Teilnahme (Selbstauskunft)
+  en: Care taken in participating (self-report)
+short:
+  de: 'Eine Frage am Ende: Sollen wir Ihre Antworten auswerten? Ja oder nein'
+  en: 'One question at the end: should we use your answers? Yes or no'
+description:
+  de: Selbstauskunft zur eigenen Teilnahme, gestellt am Ende der Befragung. Wer „nein“ antwortet, hat
+    nach eigener Angabe nicht aufmerksam geantwortet. Personen, die sich als ernsthaft Teilnehmende bezeichnen,
+    antworten konsistenter und vorhersagegültiger (Aust et al., 2013). Die Seite „Qualitätssicherung“
+    zählt die Antworten „nein“.
+  en: Self-report on the participant's own participation, asked at the end of the survey. Anyone who answers
+    “no” says they did not answer attentively. People who describe themselves as serious participants
+    answer more consistently and with higher predictive validity (Aust et al., 2013). The page “Quality
+    assurance” counts the “no” answers.
+scoring:
+  de: 1 = Antworten auswerten, 0 = nicht auswerten; keine Rekodierung.
+  en: 1 = use the answers, 0 = do not use them; no recoding.
+notes:
+  de: Eigene Formulierung in Anlehnung an die Selbstauskunft bei Meade & Craig (2012) und den Seriousness
+    Check bei Aust et al. (2013), kein wörtlich übernommenes Item. Wichtig ist der Zusatz, dass die Antwort
+    keine Folgen hat (Vergütung, Verlosung), sonst antwortet niemand mit „nein“.
+  en: Own wording based on the self-report in Meade & Craig (2012) and the seriousness check in Aust et
+    al. (2013), not an item taken word for word. The addition that the answer has no consequences (payment,
+    prize draw) matters; otherwise nobody answers “no”.
+authors:
+- family: Meade
+- family: Craig
+- family: Aust
+- family: Diedenhofen
+- family: Ullrich
+- family: Musch
+authors_text: Meade & Craig; Aust, Diedenhofen, Ullrich & Musch
+year: 2012
+sources:
+- role: original
+  citation: Meade, A. W., & Craig, S. B. (2012). Identifying careless responses in survey data. Psychological
+    Methods, 17(3), 437–455. Aust, F., Diedenhofen, B., Ullrich, S., & Musch, J. (2013). Seriousness checks
+    are useful to improve data validity in online research. Behavior Research Methods, 45(2), 527–535.
+    https://doi.org/10.3758/s13428-012-0265-2
+  doi: 10.1037/a0028085
+licence:
+  wording: CC-BY-4.0
+  distributable: true
+  permission_required: false
+  commercial: true
+tags:
+  status:
+  - Standardfrage
+  art:
+  - Datenqualität
+  thema:
+  - Sorgfalt
+  bezug:
+  - 'Person: veränderlich'
+family: null
+structure:
+  type: single_choice
+  code: sorgfalt
+  config:
+    options:
+    - id: o1
+      code: '1'
+    - id: o2
+      code: '0'
+    layout: vertical
+languages:
+  de:
+    status: source
+    wording: repo
+  de-du:
+    status: source
+    wording: repo
+  en:
+    status: source
+    wording: repo
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

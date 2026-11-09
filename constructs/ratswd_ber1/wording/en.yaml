@@ -1,0 +1,11 @@
+for: ask:ratswd_ber1@1.0
+question: 'What is your main occupation at present? If you are no longer employed, what occupation did
+  you last have in your former main employment?
+
+  <small>Note: please give the exact job title, e.g. not “clerk” but “freight forwarding clerk”, not “worker”
+  but “machine fitter”. If you are a civil servant, please give your official title, e.g. “police sergeant”
+  or “secondary school teacher”. If you are an apprentice, please give the occupation you are training
+  for.</small>'
+prefix: ''
+suffix: ''
+validation_message: ''

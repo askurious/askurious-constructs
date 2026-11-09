@@ -1,0 +1,11 @@
+for: ask:ratswd_ber1@1.0
+question: 'Welche berufliche Tätigkeit üben Sie derzeit hauptsächlich aus? Wenn Sie nicht mehr erwerbstätig
+  sind, welche Tätigkeit haben Sie bei Ihrer früheren hauptsächlichen Erwerbstätigkeit zuletzt ausgeübt?
+
+  <small>Hinweis: Bitte geben Sie die genaue Tätigkeitsbezeichnung an, also z. B. nicht „kaufmännische
+  Angestellte“, sondern: „Speditionskauffrau“, nicht „Arbeiter“, sondern: „Maschinenschlosser“. Wenn Sie
+  Beamter sind, geben Sie bitte Ihre Amtsbezeichnung an, z. B. „Polizeimeister“, oder „Studienrat“. Wenn
+  Sie Auszubildender sind, geben Sie bitte Ihren Ausbildungsberuf an.</small>'
+prefix: ''
+suffix: ''
+validation_message: ''

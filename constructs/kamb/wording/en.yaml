@@ -1,0 +1,27 @@
+for: ask:kamb@2.0
+question: Please rate the article using the following pairs of terms.
+items:
+  KAMB_1:
+    left: professional
+    right: amateur
+  KAMB_2:
+    left: cold-hearted
+    right: warm-hearted
+  KAMB_3:
+    left: confusing
+    right: understandable
+  KAMB_4:
+    left: convincing
+    right: doubtful
+  KAMB_5:
+    left: reassuring
+    right: frightening
+  KAMB_6:
+    left: negative
+    right: positive
+  KAMB_7:
+    left: neutral
+    right: biased
+  KAMB_8:
+    left: boring
+    right: interesting

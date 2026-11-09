@@ -1,0 +1,10 @@
+for: ask:ratswd_hhg1@1.0
+question: 'Wie viele Personen leben ständig in Ihrem Haushalt, Sie selbst eingeschlossen? Zu diesem Haushalt
+  zählen alle Personen, die hier gemeinsam wohnen und wirtschaften.
+
+  <small>Hinweis: Denken Sie dabei bitte auch an alle im Haushalt lebenden Kinder.</small>'
+options:
+  '1': Eine Person
+  '2': 'Mehrere Personen, und zwar:'
+  '-1': Weiß nicht
+  '-2': Keine Angabe

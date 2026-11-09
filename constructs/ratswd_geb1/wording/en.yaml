@@ -1,0 +1,7 @@
+for: ask:ratswd_geb1@1.0
+question: Were you born in Germany?
+options:
+  '1': 'Yes'
+  '2': 'No'
+  '-1': Don't know
+  '-2': No answer

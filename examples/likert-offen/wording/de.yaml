@@ -1,0 +1,13 @@
+# Wortlaut Deutsch; Items über ihre Codes aus der Struktur. / German wording; items by their codes.
+for: ask:beispiel_likert_offen@1.0
+question: Wie sehr stimmen Sie den folgenden Aussagen über den Roboter zu?
+labels:          # Antwortlabels gehören bei offenen Skalen zum Wortlaut / labels belong to the wording
+  - stimme überhaupt nicht zu
+  - stimme eher nicht zu
+  - teils/teils
+  - stimme eher zu
+  - stimme voll und ganz zu
+items:
+  BVA_1: Ich verlasse mich auf den Roboter.
+  BVA_2: Der Roboter tut, was er ankündigt.
+  BVA_3: Ich behalte den Roboter lieber im Auge.

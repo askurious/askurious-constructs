@@ -1,0 +1,8 @@
+for: ask:gender@6.0
+question: Welchem Geschlecht fühlen Sie sich zugehörig?
+options:
+  '1': weiblich
+  '2': männlich
+  '3': divers
+  '4': 'Ich beschreibe mich selbst:'
+  '99': keine Angabe

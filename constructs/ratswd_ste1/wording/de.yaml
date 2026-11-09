@@ -1,0 +1,15 @@
+for: ask:ratswd_ste1@1.0
+question: Welche berufliche Stellung haben oder hatten Sie in ihrer hauptsächlich ausgeübten Erwerbstätigkeit?
+options:
+  '1': Selbstständige/-r Landwirt/-in
+  '2': Genossenschaftsbauer/-bäuerin (ehemals LPG) in der ehem. DDR
+  '3': Akademiker/-in in freiem Beruf (Arzt/Ärztin, Rechtsanwalt/ -anwältin, Steuerberater/-in u. Ä.)
+  '4': Selbstständige/-r im Handel, im Gastgewerbe, in der Industrie, in der Dienstleistung, auch in einer
+    Ich-AG
+  '5': Mitglied einer PGH in der ehem. DDR
+  '6': Beamter/Beamtin, Richter/-in, Berufssoldat/-in
+  '7': Angestellte/-r
+  '8': Arbeiter/-in
+  '9': In einer beruflichen Ausbildung/Lehre
+  '10': Mithelfende/-r Familienangehörige/-r
+  '-1': Weiß nicht

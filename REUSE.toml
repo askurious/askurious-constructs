@@ -19,6 +19,14 @@ precedence = "override"
 SPDX-FileCopyrightText = "The authors named in the construct.yaml next to this folder"
 SPDX-License-Identifier = "CC-BY-4.0"
 
+# Wortlaut nach einer Veröffentlichung ohne dokumentierte offene Lizenz (licence: source-attributed), nicht CC BY
+# Wording after a publication without a documented open licence (licence: source-attributed), not CC BY
+[[annotations]]
+path = "constructs/gender/wording/**"
+precedence = "override"
+SPDX-FileCopyrightText = "Spiel, K., Haimson, O. L., & Lottridge, D. (2019); German version: Askurious contributors"
+SPDX-License-Identifier = "LicenseRef-source-attributed"
+
 # Werkzeuge und Tests: EUPL-1.2, wie das Hauptrepository
 # Tools and tests: EUPL-1.2, like the main repository
 [[annotations]]

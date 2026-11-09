@@ -73,6 +73,7 @@ Nach [REUSE](https://reuse.software/), maschinenlesbar in `REUSE.toml`:
 |---|---|
 | Metadaten, Struktur, Hashes, Schemas, Vokabulare, Beispiele, Dokumentation | CC0 1.0 |
 | Wortlaut in `constructs/*/wording/` | CC BY 4.0 (Quelle in der `construct.yaml` daneben) |
+| Wortlaut in `constructs/gender/wording/` (Antwortkategorien nach Spiel et al., 2019) | keine offene Lizenz dokumentiert, Quelle angeben (`LicenseRef-source-attributed`) |
 | `tools/`, `tests/` | EUPL-1.2 |
 
 GitHub zeigt CC0 als Lizenz des Repositorys (`LICENSE`); welche Lizenz für welche Datei gilt, steht in `NOTICE`
@@ -148,6 +149,7 @@ Following [REUSE](https://reuse.software/), machine-readable in `REUSE.toml`:
 |---|---|
 | Metadata, structure, hashes, schemas, vocabularies, examples, documentation | CC0 1.0 |
 | Wording in `constructs/*/wording/` | CC BY 4.0 (source in the `construct.yaml` next to it) |
+| Wording in `constructs/gender/wording/` (answer categories after Spiel et al., 2019) | no open licence documented, cite the source (`LicenseRef-source-attributed`) |
 | `tools/`, `tests/` | EUPL-1.2 |
 
 GitHub shows CC0 as the licence of the repository (`LICENSE`); which licence applies to which file is in `NOTICE`

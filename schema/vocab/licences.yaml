@@ -23,6 +23,13 @@ licences:
     terms:
       de: "Lizenz: CC0 1.0, ohne Auflagen nutzbar."
       en: "Licence: CC0 1.0, free to use without conditions."
+  source-attributed:
+    name: {de: "Nach einer Veröffentlichung, mit Quellenangabe", en: "After a publication, with attribution"}
+    distributable: true
+    commercial: null
+    terms:
+      de: "Kurze Antwortkategorien nach einer Veröffentlichung; für den Wortlaut ist keine offene Lizenz dokumentiert. Die Quelle ist immer anzugeben."
+      en: "Short answer categories after a publication; no open licence is documented for the wording. Always cite the source."
   ZIS-noncommercial:
     name: {de: "GESIS/ZIS, nichtkommerziell", en: "GESIS/ZIS, non-commercial"}
     url: https://zis.gesis.org/

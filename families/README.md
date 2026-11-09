@@ -20,5 +20,12 @@ members:
     label: {de: "BFI-2-S, 30 Items", en: "BFI-2-S, 30 items"}
 ```
 
-Jedes Mitglied nennt in seiner `construct.yaml` die Familie: `family: big-five`.
-Each member names the family in its `construct.yaml`: `family: big-five`.
+Jedes Mitglied nennt in seiner `construct.yaml` die Familie: `family: big-five`. `tools/validate.py` prüft, dass jedes
+Mitglied ein Konstrukt des Katalogs ist, in nur einer Familie steht und sein Feld `family` passt. Eine Askurious-
+Installation liefert die Familien, die dort für Katalog-Konstrukte gesetzt sind, unter Administration › Konstrukte ›
+Katalog als „Familien als Datei für den Katalog“ (JSON, gültiges YAML).
+
+Each member names the family in its `construct.yaml`: `family: big-five`. `tools/validate.py` checks that every
+member is a construct of the catalogue, in one family only, and that its field `family` agrees. An Askurious
+installation gives the families set there for constructs of the catalogue under Administration › Constructs ›
+Catalogue as “Families as a file for the catalogue” (JSON, valid YAML).

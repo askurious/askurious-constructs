@@ -1,0 +1,119 @@
+# Internale-Externale-Kontrollüberzeugung-4 (IE-4)
+# Wortlaut: nicht im Repository (Lizenz), nur der Hash je Sprache
+format: 1
+id: ask:ie4
+key: ie4
+version: '1.0'
+status: verified
+kind: scale
+requires: '2026.11'
+name:
+  de: Internale-Externale-Kontrollüberzeugung-4 (IE-4)
+  en: Internal-External Locus of Control 4 (IE-4)
+short:
+  de: 4 Aussagen, 5 Stufen; je 2 Items für internale und externale Kontrollüberzeugung
+  en: 4 statements, 5 points; 2 items each for internal and external locus of control
+description:
+  de: 'Kurzskala zur Kontrollüberzeugung: Wie sehr erleben Personen Ereignisse als Folge des eigenen Handelns
+    (internal) oder als Schicksal, Zufall oder von anderen bestimmt (external)?'
+  en: 'Short scale on locus of control: how much do people experience events as a result of their own
+    actions (internal) or as fate, chance or determined by others (external)?'
+scoring:
+  de: 'Zwei Skalenwerte: Mittelwert der Items 1 und 2 (internal, IKÜ) und der Items 3 und 4 (external,
+    EKÜ); keine Umpolung.'
+  en: 'Two scale scores: mean of items 1 and 2 (internal, IKÜ) and of items 3 and 4 (external, EKÜ); no
+    reverse coding.'
+notes:
+  de: 'GESIS/ZIS: kostenfrei für nichtkommerzielle Forschungszwecke. Für andere Zwecke oder eine andere
+    als die dokumentierte Form ist das Einverständnis der Autorinnen und Autoren einzuholen. Die ZIS-Dokumentation
+    ist in allen resultierenden Arbeiten als Quelle anzugeben. Englische Fassung: Nießen, D., Schmidt,
+    I., Groskurth, K., Rammstedt, B., & Lechner, C. M. (2022). The Internal–External Locus of Control
+    Short Scale–4 (IE-4): A comprehensive validation of the English-language adaptation. PLOS ONE, 17(7),
+    e0271289. https://doi.org/10.1371/journal.pone.0271289; der Artikel steht unter CC BY 4.0, für die
+    Nutzung der Items gelten die ZIS-Bedingungen.'
+  en: 'GESIS/ZIS: free of charge for non-commercial research. For other purposes or a form other than
+    the documented one, ask the authors for permission. Cite the ZIS documentation as the source in all
+    resulting work. English version: Nießen, D., Schmidt, I., Groskurth, K., Rammstedt, B., & Lechner,
+    C. M. (2022). The Internal–External Locus of Control Short Scale–4 (IE-4): A comprehensive validation
+    of the English-language adaptation. PLOS ONE, 17(7), e0271289. https://doi.org/10.1371/journal.pone.0271289;
+    the article is licensed under CC BY 4.0, the ZIS terms apply to using the items.'
+authors:
+- family: Kovaleva
+- family: Beierlein
+- family: Kemper
+- family: Rammstedt
+year: 2014
+sources:
+- role: original
+  citation: Kovaleva, A., Beierlein, C., Kemper, C. J., & Rammstedt, B. (2014). Internale-Externale-Kontrollüberzeugung-4
+    (IE-4). Zusammenstellung sozialwissenschaftlicher Items und Skalen (ZIS).
+  doi: 10.6102/zis184
+licence:
+  wording: ZIS-noncommercial
+  distributable: false
+  permission_required: false
+  commercial: false
+tags:
+  status:
+  - validiert
+  quelle:
+  - GESIS ZIS
+  art:
+  - Persönlichkeit
+  thema:
+  - Kontrollüberzeugung
+  fach:
+  - Psychologie
+  bezug:
+  - 'Person: stabil'
+family: null
+structure:
+  type: likert
+  code: IE4
+  config:
+    points: 5
+    labeling: full
+    label_display: once
+    randomize: true
+    statements:
+    - id: s1
+      code: IE4_1
+      reverse: false
+      subscale: IKÜ
+    - id: s2
+      code: IE4_2
+      reverse: false
+      subscale: IKÜ
+    - id: s3
+      code: IE4_3
+      reverse: false
+      subscale: EKÜ
+    - id: s4
+      code: IE4_4
+      reverse: false
+      subscale: EKÜ
+  labels:
+    de:
+    - trifft gar nicht zu
+    - trifft wenig zu
+    - trifft etwas zu
+    - trifft ziemlich zu
+    - trifft voll und ganz zu
+    en:
+    - doesn't apply at all
+    - applies a bit
+    - applies somewhat
+    - applies mostly
+    - applies completely
+languages:
+  de:
+    status: validated
+    wording: overlay
+    sha256: sha256:c2d7877ed2ceb2074b59de4f458a6a6bcae1eefbe2eda55f4846802283c0bff1
+  en:
+    status: validated
+    wording: overlay
+    sha256: sha256:3765537137626734af49ab3a933fb4e985a701f42644b79c8e7baab679554476
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

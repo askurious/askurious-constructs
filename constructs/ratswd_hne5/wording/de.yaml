@@ -1,0 +1,9 @@
+for: ask:ratswd_hne5@1.0
+question: Können Sie mir jetzt noch sagen, ob es weniger als 2.000 Euro, 2.000 bis unter 2.500 Euro oder
+  2.500 Euro und mehr im Monat beträgt?
+options:
+  '1': 1.500 bis unter 2.000 Euro
+  '2': 2.000 bis unter 2.500 Euro
+  '3': 2.500 Euro bis unter 3.000 Euro
+  '-1': Weiß nicht
+  '-2': Keine Angabe

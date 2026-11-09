@@ -1,0 +1,6 @@
+for: ask:beispiel_standardfrage@1.0
+question: Does a pet live in your household?
+options:
+  "1": "Yes"
+  "2": "No"
+  "-2": No answer

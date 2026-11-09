@@ -1,0 +1,7 @@
+for: ask:ratswd_sta1@1.0
+question: Do you have German citizenship?
+options:
+  '1': 'Yes'
+  '2': 'No'
+  '-1': Don't know
+  '-2': No answer

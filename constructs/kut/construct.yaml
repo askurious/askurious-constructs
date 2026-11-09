@@ -1,0 +1,116 @@
+# Kontrollüberzeugung im Umgang mit Technik (KUT)
+# Wortlaut: nicht im Repository (Lizenz), nur der Hash je Sprache
+format: 1
+id: ask:kut
+key: kut
+version: '4.0'
+status: review
+kind: scale
+requires: '2026.11'
+name:
+  de: Kontrollüberzeugung im Umgang mit Technik (KUT)
+  en: Locus of control in dealing with technology (KUT)
+short:
+  de: 8 Aussagen, 5 Stufen; subjektive Kontrolle über technische Geräte
+  en: 8 statements, 5 points; subjective control over technical devices
+description:
+  de: Erfasst, inwieweit Personen glauben, technische Probleme durch eigenes Handeln lösen zu können (internal)
+    oder sich Technik ausgeliefert fühlen.
+  en: Measures to what extent people believe they can solve technical problems through their own actions
+    (internal) or feel at the mercy of technology.
+scoring:
+  de: Skalenwert = Mittelwert der 8 Items; umgepolte Items (2, 3, 5, 6) sind im Export bereits rekodiert.
+  en: Scale score = mean of the 8 items; the reverse-coded items (2, 3, 5, 6) are already recoded in the
+    export.
+notes:
+  de: 'Für den Wortlaut und seine Übersetzungen ist keine allgemeine Nutzungs- oder Veröffentlichungsfreigabe
+    dokumentiert. Die Angabe „nichtkommerzielle Forschung und Lehre“ allein ersetzt keinen Rechtebeleg.
+    Neue Nutzung setzt einen vom Betreiber geprüften Nachweis für die konkrete Studie, Person und Sprachfassung
+    voraus. Die Quelle ist immer anzugeben. Englische Fassung: inoffizielle Arbeitsübersetzung.'
+  en: 'No general use or publication permission is documented for the wording or its translations. Stating
+    “non-commercial research and teaching” alone does not replace rights evidence. New use requires operator-checked
+    evidence covering the specific study, account and language version. Always cite the source. English
+    version: unofficial working translation.'
+authors:
+- family: Beier
+year: 1999
+sources:
+- role: original
+  citation: Beier, G. (1999). Kontrollüberzeugungen im Umgang mit Technik. Report Psychologie, 24(9),
+    684–693.
+licence:
+  wording: article-no-licence
+  distributable: false
+  permission_required: true
+  commercial: false
+tags:
+  status:
+  - validiert
+  art:
+  - Einstellung
+  thema:
+  - Technik
+  - Kontrollüberzeugung
+  fach:
+  - Psychologie
+  bezug:
+  - 'Person: stabil'
+family: null
+structure:
+  type: likert
+  code: KUT
+  config:
+    points: 5
+    labeling: full
+    label_display: once
+    randomize: true
+    statements:
+    - id: s1
+      code: KUT_1
+      reverse: false
+    - id: s2
+      code: KUT_2
+      reverse: true
+    - id: s3
+      code: KUT_3
+      reverse: true
+    - id: s4
+      code: KUT_4
+      reverse: false
+    - id: s5
+      code: KUT_5
+      reverse: true
+    - id: s6
+      code: KUT_6
+      reverse: true
+    - id: s7
+      code: KUT_7
+      reverse: false
+    - id: s8
+      code: KUT_8
+      reverse: false
+  labels:
+    de:
+    - stimmt gar nicht
+    - stimmt wenig
+    - stimmt mittelmäßig
+    - stimmt ziemlich
+    - stimmt sehr
+    en:
+    - not at all true
+    - slightly true
+    - moderately true
+    - quite true
+    - very true
+languages:
+  de:
+    status: validated
+    wording: overlay
+    sha256: sha256:73f901af90d5194aa5f3801fab2f203fb09ee06d19018111f73f423bbbf7e832
+  en:
+    status: working
+    wording: overlay
+    sha256: sha256:697ccc4dd48ff45443c47b25ad3f4af3be6f27a9e3c30abf538aed45e5ecd869
+versions:
+- version: '4.0'
+  note: Übernommen aus Askurious (seed_version 4) / taken over from Askurious

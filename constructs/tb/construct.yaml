@@ -1,0 +1,147 @@
+# Kurzskala Technikbereitschaft (TB)
+# Wortlaut: nicht im Repository (Lizenz), nur der Hash je Sprache
+format: 1
+id: ask:tb
+key: tb
+version: '1.0'
+status: verified
+kind: scale
+requires: '2026.11'
+name:
+  de: Kurzskala Technikbereitschaft (TB)
+  en: Technology Commitment Short Scale (TB)
+short:
+  de: 12 Aussagen, 5 Stufen; je 4 Items für Technikakzeptanz, Technikkompetenz- und Technikkontrollüberzeugungen
+  en: 12 statements, 5 points; 4 items each for technology acceptance, technology competence beliefs and
+    technology control beliefs
+description:
+  de: Erfasst die Bereitschaft zum Umgang mit moderner Technik (technology commitment) über drei Facetten.
+    In allen Altersgruppen einsetzbar, entwickelt besonders für das höhere Lebensalter. Cronbachs Alpha
+    .84 (Technikakzeptanz), .84 (Technikkompetenz), .74 (Technikkontrolle), Gesamtskala .84.
+  en: Measures the readiness to deal with modern technology (technology commitment) through three facets.
+    Usable in all age groups, developed especially for older adults. Cronbach's alpha .84 (technology
+    acceptance), .84 (technology competence), .74 (technology control), whole scale .84.
+scoring:
+  de: 'Drei Skalenwerte als Mittelwert je vier Items: Technikakzeptanz (1 bis 4), Technikkompetenzüberzeugungen
+    (5 bis 8), Technikkontrollüberzeugungen (9 bis 12); die negativ gepolten Items 5 bis 8 sind im Export
+    bereits rekodiert, hohe Werte stehen also überall für hohe Technikbereitschaft. Ein Gesamtwert über
+    alle 12 Items ist laut ZIS ebenfalls zulässig (dort als Summenwert beschrieben, Kennwerte im Bereich
+    1 bis 5).'
+  en: 'Three scale scores as the mean of four items each: technology acceptance (Technikakzeptanz, 1 to
+    4), technology competence beliefs (Technikkompetenzüberzeugungen, 5 to 8), technology control beliefs
+    (Technikkontrollüberzeugungen, 9 to 12); the negatively keyed items 5 to 8 are already recoded in
+    the export, so high values stand for high technology commitment throughout. According to ZIS, a total
+    score over all 12 items is also permitted (described there as a sum score, values in the range 1 to
+    5).'
+notes:
+  de: 'GESIS/ZIS: kostenfrei für nichtkommerzielle Forschungszwecke. Für andere Zwecke oder eine andere
+    als die dokumentierte Form ist das Einverständnis der Autorinnen und Autoren einzuholen. Die ZIS-Dokumentation
+    ist in allen resultierenden Arbeiten als Quelle anzugeben. Nur deutsche Fassung: ZIS dokumentiert
+    keine englischen Items.'
+  en: 'GESIS/ZIS: free of charge for non-commercial research. For other purposes or a form other than
+    the documented one, ask the authors for permission. Cite the ZIS documentation as the source in all
+    resulting work. German version only: ZIS documents no English items.'
+authors:
+- family: Neyer
+- family: Felber
+- family: Gebhardt
+year: 2012
+sources:
+- role: original
+  citation: 'Neyer, F. J., Felber, J., & Gebhardt, C. (2012). Entwicklung und Validierung einer Kurzskala
+    zur Erfassung von Technikbereitschaft (technology commitment). Diagnostica, 58, 87–99. Dokumentation:
+    Neyer, F. J., Felber, J., & Gebhardt, C. (2016). Kurzskala Technikbereitschaft (TB, technology commitment).
+    Zusammenstellung sozialwissenschaftlicher Items und Skalen (ZIS).'
+  doi: 10.6102/zis244
+licence:
+  wording: ZIS-noncommercial
+  distributable: false
+  permission_required: false
+  commercial: false
+tags:
+  status:
+  - validiert
+  quelle:
+  - GESIS ZIS
+  art:
+  - Einstellung
+  thema:
+  - Technik
+  - Technikbereitschaft
+  fach:
+  - Psychologie
+  bezug:
+  - 'Person: stabil'
+family: null
+structure:
+  type: likert
+  code: TB
+  config:
+    points: 5
+    labeling: full
+    label_display: once
+    randomize: true
+    statements:
+    - id: s1
+      code: TB_1
+      reverse: false
+      subscale: Technikakzeptanz
+    - id: s2
+      code: TB_2
+      reverse: false
+      subscale: Technikakzeptanz
+    - id: s3
+      code: TB_3
+      reverse: false
+      subscale: Technikakzeptanz
+    - id: s4
+      code: TB_4
+      reverse: false
+      subscale: Technikakzeptanz
+    - id: s5
+      code: TB_5
+      reverse: true
+      subscale: Technikkompetenzüberzeugungen
+    - id: s6
+      code: TB_6
+      reverse: true
+      subscale: Technikkompetenzüberzeugungen
+    - id: s7
+      code: TB_7
+      reverse: true
+      subscale: Technikkompetenzüberzeugungen
+    - id: s8
+      code: TB_8
+      reverse: true
+      subscale: Technikkompetenzüberzeugungen
+    - id: s9
+      code: TB_9
+      reverse: false
+      subscale: Technikkontrollüberzeugungen
+    - id: s10
+      code: TB_10
+      reverse: false
+      subscale: Technikkontrollüberzeugungen
+    - id: s11
+      code: TB_11
+      reverse: false
+      subscale: Technikkontrollüberzeugungen
+    - id: s12
+      code: TB_12
+      reverse: false
+      subscale: Technikkontrollüberzeugungen
+  labels:
+    de:
+    - stimmt gar nicht
+    - stimmt wenig
+    - stimmt teilweise
+    - stimmt ziemlich
+    - stimmt völlig
+languages:
+  de:
+    status: validated
+    wording: overlay
+    sha256: sha256:d4f642c8c1bab030cc62c536de865d83e71e1b72391bbe2f979653bb75d0196c
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

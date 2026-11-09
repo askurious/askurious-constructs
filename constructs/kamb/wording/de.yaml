@@ -1,0 +1,27 @@
+for: ask:kamb@2.0
+question: Bewerten Sie den Artikel mithilfe der folgenden Begriffspaare.
+items:
+  KAMB_1:
+    left: professionell
+    right: amateurhaft
+  KAMB_2:
+    left: kaltherzig
+    right: warmherzig
+  KAMB_3:
+    left: verwirrend
+    right: verständlich
+  KAMB_4:
+    left: überzeugend
+    right: zweifelhaft
+  KAMB_5:
+    left: beruhigend
+    right: beängstigend
+  KAMB_6:
+    left: negativ
+    right: positiv
+  KAMB_7:
+    left: neutral
+    right: parteiisch
+  KAMB_8:
+    left: langweilig
+    right: interessant

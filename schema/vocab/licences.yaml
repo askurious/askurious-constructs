@@ -1,0 +1,54 @@
+# Erlaubte Lizenzschlüssel für den Wortlaut eines Konstrukts.
+# Allowed licence keys for the wording of a construct.
+#
+# distributable: Darf der Wortlaut in dieses Repository? / May the wording be in this repository?
+#   false: nur Struktur und Wortlauthash hier, der Wortlaut liegt im privaten Overlay einer Instanz.
+#   false: only structure and wording hash here, the wording lives in an instance's private overlay.
+# commercial: kommerzielle Nutzung erlaubt (null: nicht angegeben). / commercial use allowed (null: not stated).
+# Einschätzung, keine Rechtsberatung. / An assessment, not legal advice.
+licences:
+  CC-BY-4.0:
+    name: {de: "CC BY 4.0", en: "CC BY 4.0"}
+    url: https://creativecommons.org/licenses/by/4.0/
+    distributable: true
+    commercial: true
+    terms:
+      de: "Lizenz: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), frei nutzbar und anpassbar mit Quellenangabe und Hinweis auf Änderungen."
+      en: "Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), free to use and adapt with attribution and a note of changes."
+  CC0-1.0:
+    name: {de: "CC0 1.0", en: "CC0 1.0"}
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+    distributable: true
+    commercial: true
+    terms:
+      de: "Lizenz: CC0 1.0, ohne Auflagen nutzbar."
+      en: "Licence: CC0 1.0, free to use without conditions."
+  ZIS-noncommercial:
+    name: {de: "GESIS/ZIS, nichtkommerziell", en: "GESIS/ZIS, non-commercial"}
+    url: https://zis.gesis.org/
+    distributable: false
+    commercial: false
+    terms:
+      de: "GESIS/ZIS: kostenfrei für nichtkommerzielle Forschungszwecke. Für andere Zwecke oder eine andere als die dokumentierte Form ist das Einverständnis der Autorinnen und Autoren einzuholen. Die ZIS-Dokumentation ist in allen resultierenden Arbeiten als Quelle anzugeben."
+      en: "GESIS/ZIS: free of charge for non-commercial research. For other purposes or a form other than the documented one, ask the authors for permission. Cite the ZIS documentation as the source in all resulting work."
+  article-no-licence:
+    name: {de: "Zeitschriftenartikel, keine Freigabe dokumentiert", en: "Journal article, no permission documented"}
+    distributable: false
+    commercial: false
+    terms:
+      de: "Für den Wortlaut und seine Übersetzungen ist keine allgemeine Nutzungs- oder Veröffentlichungsfreigabe dokumentiert. Neue Nutzung setzt einen vom Betreiber geprüften Nachweis für die konkrete Studie, Person und Sprachfassung voraus. Die Quelle ist immer anzugeben."
+      en: "No general use or publication permission is documented for the wording or its translations. New use requires operator-checked evidence covering the specific study, account and language version. Always cite the source."
+  publisher-copyright:
+    name: {de: "Urheberrecht des Verlags", en: "Publisher's copyright"}
+    distributable: false
+    commercial: false
+    terms:
+      de: "Der Wortlaut ist im Werk eines Verlags erschienen und nicht frei lizenziert. Neue Nutzung nur mit dokumentierter Berechtigung. Die Quelle ist immer anzugeben."
+      en: "The wording was published by a publisher and is not openly licensed. New use only with documented permission. Always cite the source."
+  authors-free-use:
+    name: {de: "Von den Autoren frei nutzbar, keine Weitergabelizenz", en: "Free to use per the authors, no licence to pass on"}
+    distributable: false
+    commercial: null
+    terms:
+      de: "Laut den Autoren frei nutzbar; eine offene Lizenz zur Weitergabe des Wortlauts ist nicht angegeben. Die Quelle ist immer anzugeben."
+      en: "Free to use according to the authors; no open licence to pass the wording on is stated. Always cite the source."

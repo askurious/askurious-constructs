@@ -1,0 +1,9 @@
+for: ask:ratswd_hne5@1.0
+question: Can you now also tell me whether it is less than 2,000 euros, 2,000 to under 2,500 euros or
+  2,500 euros or more per month?
+options:
+  '1': 1,500 to under 2,000 euros
+  '2': 2,000 to under 2,500 euros
+  '3': 2,500 euros to under 3,000 euros
+  '-1': Don't know
+  '-2': No answer

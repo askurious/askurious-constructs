@@ -1,0 +1,6 @@
+for: ask:beispiel_differential@1.0
+question: How did you find the video?
+items:
+  BVD_1: {left: exciting, right: boring}
+  BVD_2: {left: unclear, right: clear}
+  BVD_3: {left: unpleasant, right: pleasant}

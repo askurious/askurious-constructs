@@ -1,0 +1,84 @@
+# Geschlecht
+# Wortlaut: wording/<Sprache>.yaml
+format: 1
+id: ask:gender
+key: gender
+version: '6.0'
+status: review
+kind: standard_question
+requires: '2026.11'
+name:
+  de: Geschlecht
+  en: Gender
+short:
+  de: Weiblich, männlich, divers, Selbstbeschreibung, keine Angabe
+  en: Female, male, diverse, self-description, prefer not to disclose
+description:
+  de: 'Geschlechtsidentität nach den Empfehlungen von Spiel et al. für inklusivere Geschlechtsabfragen:
+    weiblich, männlich, divers, „Ich beschreibe mich selbst:“ mit Textfeld und „keine Angabe“. Die Selbstbeschreibung
+    lässt sich je Element abwählen; das gilt nicht als Abweichung.'
+  en: 'Gender identity following the recommendations of Spiel et al. for more inclusive gender questions:
+    female, male, diverse, “Prefer to self-describe:” with a text field, and “prefer not to disclose”.
+    The self-description can be left out per element; that does not count as a deviation.'
+scoring:
+  de: ''
+  en: ''
+notes:
+  de: Eigene Formulierung von Askurious nach den Empfehlungen von Spiel, Haimson & Lottridge (2019).
+  en: Own wording of Askurious following the recommendations of Spiel, Haimson & Lottridge (2019).
+authors:
+- family: Spiel
+- family: Haimson
+- family: Lottridge
+year: 2019
+sources:
+- role: original
+  citation: 'Spiel, K., Haimson, O. L., & Lottridge, D. (2019). How to do better with gender on surveys:
+    A guide for HCI researchers. Interactions, 26(4), 62–65.'
+  doi: 10.1145/3338283
+licence:
+  wording: CC-BY-4.0
+  distributable: true
+  permission_required: false
+  commercial: true
+tags:
+  status:
+  - Standardfrage
+  art:
+  - Demografie
+  thema:
+  - Gender
+  fach:
+  - HCI
+  bezug:
+  - 'Person: stabil'
+family: null
+structure:
+  type: single_choice
+  code: gender
+  config:
+    options:
+    - id: o1
+      code: '1'
+    - id: o2
+      code: '2'
+    - id: o3
+      code: '3'
+    - id: o5
+      code: '4'
+      text: true
+      optional: true
+    - id: o4
+      code: '99'
+      missing: true
+    layout: vertical
+languages:
+  de:
+    status: source
+    wording: repo
+  en:
+    status: source
+    wording: repo
+versions:
+- version: '6.0'
+  note: Übernommen aus Askurious (seed_version 6) / taken over from Askurious

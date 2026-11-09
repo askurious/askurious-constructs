@@ -1,0 +1,14 @@
+for: ask:ratswd_ste1@1.0
+question: What is or was your occupational status in your main employment?
+options:
+  '1': Self-employed farmer
+  '2': Member of an agricultural cooperative (formerly LPG) in the former GDR
+  '3': Self-employed professional (doctor, lawyer, tax adviser and the like)
+  '4': Self-employed in trade, hospitality, industry or services, also as a sole trader (Ich-AG)
+  '5': Member of a craftsmen's cooperative (PGH) in the former GDR
+  '6': Civil servant, judge, professional soldier
+  '7': Salaried employee
+  '8': Manual worker
+  '9': In vocational training/apprenticeship
+  '10': Family member helping in the family business
+  '-1': Don't know

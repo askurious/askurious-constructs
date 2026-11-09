@@ -1,0 +1,140 @@
+# Interaktionsbezogene Technikaffinität (ATI)
+# Wortlaut: nicht im Repository (Lizenz), nur der Hash je Sprache
+format: 1
+id: ask:ati
+key: ati
+version: '1.0'
+status: verified
+kind: scale
+requires: '2026.11'
+name:
+  de: Interaktionsbezogene Technikaffinität (ATI)
+  en: Affinity for Technology Interaction (ATI)
+short:
+  de: 9 Aussagen, 6 Stufen; Neigung, sich aktiv und intensiv mit technischen Systemen zu beschäftigen
+  en: 9 statements, 6 points; tendency to engage actively and intensively with technical systems
+description:
+  de: 'Erfasst die interaktionsbezogene Technikaffinität (Affinity for Technology Interaction): ob eine
+    Person sich gern und eingehend mit technischen Systemen (Apps, Software, digitale Geräte) beschäftigt
+    oder Technik eher meidet. Als persönliche Ressource im Umgang mit Technik gedacht, theoretisch an
+    Need for Cognition angelehnt. Eindimensional; in mehreren Studien mit zusammen über 1500 Personen
+    gute bis sehr gute Reliabilität. Häufig zur Beschreibung von Stichproben in Nutzerstudien eingesetzt.
+    Validiert auf Deutsch und Englisch.'
+  en: 'Measures affinity for technology interaction: whether a person likes to engage with technical systems
+    (apps, software, digital devices) in depth or rather avoids it. Meant as a personal resource for coping
+    with technology, rooted in need for cognition. One dimension; good to excellent reliability in several
+    studies with more than 1500 people in total. Often used to describe samples in user studies. Validated
+    in German and English.'
+scoring:
+  de: Skalenwert = Mittelwert der 9 Items (1 bis 6); die negativ formulierten Items 3, 6 und 8 sind im
+    Export bereits rekodiert, hohe Werte stehen also für hohe Technikaffinität. Die Autoren empfehlen,
+    Mittelwert, Standardabweichung und Cronbachs Alpha mit zwei Nachkommastellen zu berichten.
+  en: Scale score = mean of the 9 items (1 to 6); the negatively worded items 3, 6 and 8 are already recoded
+    in the export, so high values stand for high affinity. The authors recommend reporting mean, standard
+    deviation and Cronbach's alpha with two decimals.
+notes:
+  de: 'Laut den Autoren frei nutzbar (ati-scale.org, „Conditions of Use“: „The scale is free to use“);
+    sie bitten um Zitation und freuen sich über eine kurze Nachricht zum Einsatz (ati@imis.uni-luebeck.de).
+    Eine offene Lizenz zur Weitergabe des Wortlauts ist nicht angegeben, deshalb steht er nicht im öffentlichen
+    Code. Deutsche und englische Fassung im Wortlaut der Skalenblätter auf ati-scale.org (Stand 2022-02-25),
+    alle sechs Stufen beschriftet. Im Original ist die Reihenfolge der Aussagen fest; hier zufällig, im
+    Editor abschaltbar. Eine Kurzfassung mit 4 Items (ATI-S) gibt es ebenfalls.'
+  en: 'Free to use according to the authors (ati-scale.org, “Conditions of Use”: “The scale is free to
+    use”); they ask to cite the scale and welcome a short message on its use (ati@imis.uni-luebeck.de).
+    No open licence to pass the wording on is stated, so it is not in the public code. German and English
+    version worded as in the scale sheets on ati-scale.org (2022-02-25), all six points labelled. The
+    original keeps the statements in a fixed order; here random, can be switched off in the editor. A
+    4-item short version (ATI-S) also exists.'
+authors:
+- family: Franke
+- family: Attig
+- family: Wessel
+year: 2019
+sources:
+- role: original
+  citation: 'Franke, T., Attig, C., & Wessel, D. (2019). A personal resource for technology interaction:
+    Development and validation of the Affinity for Technology Interaction (ATI) scale. International Journal
+    of Human–Computer Interaction, 35(6), 456–467.'
+  doi: 10.1080/10447318.2018.1456150
+licence:
+  wording: authors-free-use
+  distributable: false
+  permission_required: false
+  commercial: null
+tags:
+  status:
+  - validiert
+  art:
+  - Persönlichkeit
+  thema:
+  - Technik
+  - Technikaffinität
+  fach:
+  - Psychologie
+  - HCI
+  bezug:
+  - 'Person: stabil'
+family: null
+structure:
+  type: likert
+  code: ATI
+  config:
+    points: 6
+    labeling: full
+    label_display: once
+    randomize: true
+    statements:
+    - id: s1
+      code: ATI_1
+      reverse: false
+    - id: s2
+      code: ATI_2
+      reverse: false
+    - id: s3
+      code: ATI_3
+      reverse: true
+    - id: s4
+      code: ATI_4
+      reverse: false
+    - id: s5
+      code: ATI_5
+      reverse: false
+    - id: s6
+      code: ATI_6
+      reverse: true
+    - id: s7
+      code: ATI_7
+      reverse: false
+    - id: s8
+      code: ATI_8
+      reverse: true
+    - id: s9
+      code: ATI_9
+      reverse: false
+  labels:
+    de:
+    - stimmt gar nicht
+    - stimmt weitgehend nicht
+    - stimmt eher nicht
+    - stimmt eher
+    - stimmt weitgehend
+    - stimmt völlig
+    en:
+    - completely disagree
+    - largely disagree
+    - slightly disagree
+    - slightly agree
+    - largely agree
+    - completely agree
+languages:
+  de:
+    status: validated
+    wording: overlay
+    sha256: sha256:b4d72001eb2ffb7b1ad2fa21954ac7e46b2e25cd806df6c07d4424adc0d31ba6
+  en:
+    status: validated
+    wording: overlay
+    sha256: sha256:0f0a4c0f0792ca8ea22cf9e77256e21f883837ab582c2af40ac4b982ff1dd563
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

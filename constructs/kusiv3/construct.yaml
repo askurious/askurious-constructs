@@ -1,0 +1,109 @@
+# Interpersonales Vertrauen (KUSIV3)
+# Wortlaut: nicht im Repository (Lizenz), nur der Hash je Sprache
+format: 1
+id: ask:kusiv3
+key: kusiv3
+version: '1.0'
+status: verified
+kind: scale
+requires: '2026.11'
+name:
+  de: Interpersonales Vertrauen (KUSIV3)
+  en: Interpersonal Trust Short Scale (KUSIV3)
+short:
+  de: 3 Aussagen, 5 Stufen; Vertrauen in andere Menschen als Persönlichkeitsmerkmal
+  en: 3 statements, 5 points; trust in other people as a personality trait
+description:
+  de: Kurzskala zur Messung des zwischenmenschlichen Vertrauens mit drei Items (Bearbeitung etwa 30 Sekunden).
+  en: Short scale measuring interpersonal trust with three items (about 30 seconds to answer).
+scoring:
+  de: Skalenwert = Mittelwert der 3 Items; Item 2 ist negativ formuliert und im Export bereits rekodiert
+    (Nießen et al., 2020).
+  en: Scale score = mean of the 3 items; item 2 is worded negatively and already recoded in the export
+    (Nießen et al., 2020).
+notes:
+  de: 'GESIS/ZIS: kostenfrei für nichtkommerzielle Forschungszwecke. Für andere Zwecke oder eine andere
+    als die dokumentierte Form ist das Einverständnis der Autorinnen und Autoren einzuholen. Die ZIS-Dokumentation
+    ist in allen resultierenden Arbeiten als Quelle anzugeben. Englische Fassung: Nießen, D., Beierlein,
+    C., Rammstedt, B., & Lechner, C. M. (2020). An English-language adaptation of the Interpersonal Trust
+    Short Scale (KUSIV3). Measurement Instruments for the Social Sciences, 2, 10. https://doi.org/10.1186/s42409-020-00016-1;
+    der Artikel steht unter CC BY 4.0, für die Nutzung der Items gelten die ZIS-Bedingungen.'
+  en: 'GESIS/ZIS: free of charge for non-commercial research. For other purposes or a form other than
+    the documented one, ask the authors for permission. Cite the ZIS documentation as the source in all
+    resulting work. English version: Nießen, D., Beierlein, C., Rammstedt, B., & Lechner, C. M. (2020).
+    An English-language adaptation of the Interpersonal Trust Short Scale (KUSIV3). Measurement Instruments
+    for the Social Sciences, 2, 10. https://doi.org/10.1186/s42409-020-00016-1; the article is licensed
+    under CC BY 4.0, the ZIS terms apply to using the items.'
+authors:
+- family: Beierlein
+- family: Kemper
+- family: Kovaleva
+- family: Rammstedt
+year: 2014
+sources:
+- role: original
+  citation: Beierlein, C., Kemper, C. J., Kovaleva, A., & Rammstedt, B. (2014). Interpersonales Vertrauen
+    (KUSIV3). Zusammenstellung sozialwissenschaftlicher Items und Skalen (ZIS).
+  doi: 10.6102/zis37
+licence:
+  wording: ZIS-noncommercial
+  distributable: false
+  permission_required: false
+  commercial: false
+tags:
+  status:
+  - validiert
+  quelle:
+  - GESIS ZIS
+  art:
+  - Einstellung
+  thema:
+  - Vertrauen
+  fach:
+  - Psychologie
+  bezug:
+  - 'Person: stabil'
+family: null
+structure:
+  type: likert
+  code: KUSIV
+  config:
+    points: 5
+    labeling: full
+    label_display: once
+    randomize: true
+    statements:
+    - id: s1
+      code: KUSIV_1
+      reverse: false
+    - id: s2
+      code: KUSIV_2
+      reverse: true
+    - id: s3
+      code: KUSIV_3
+      reverse: false
+  labels:
+    de:
+    - trifft gar nicht zu
+    - trifft wenig zu
+    - trifft etwas zu
+    - trifft ziemlich zu
+    - trifft voll und ganz zu
+    en:
+    - doesn't apply at all
+    - applies a bit
+    - applies somewhat
+    - applies mostly
+    - applies completely
+languages:
+  de:
+    status: validated
+    wording: overlay
+    sha256: sha256:0464888cc4c4f2b2c62e39272e1de54b6dbcd83e1ae236f1f25db373242a7b12
+  en:
+    status: validated
+    wording: overlay
+    sha256: sha256:88a64c18504dcf81aacd029b162821e4728f9722d95dd960655d9ead19127937
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

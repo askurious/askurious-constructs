@@ -1,0 +1,9 @@
+[project]
+name = "askurious-constructs"
+version = "0"
+description = "Catalogue of scales and standard questions for Askurious, with the tools that check and build it"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

@@ -1,0 +1,137 @@
+# Foil & Target Instrument for AI Literacy (FITAI)
+# Wortlaut: wording/<Sprache>.yaml
+format: 1
+id: ask:fitai
+key: fitai
+version: '1.0'
+status: verified
+kind: scale
+requires: '2026.11'
+name:
+  de: Foil & Target Instrument for AI Literacy (FITAI)
+  en: Foil & Target Instrument for AI Literacy (FITAI)
+short:
+  de: '12 Aussagen, 5 Stufen; KI-Wissen: 6 zutreffende Aussagen (Targets), 6 erfundene (Foils)'
+  en: '12 statements, 5 points; AI knowledge: 6 true statements (targets), 6 invented ones (foils)'
+description:
+  de: 'Erfasst KI-Wissen (AI Literacy) mit Aussagen über Künstliche Intelligenz, die als zutreffend beurteilt
+    werden sollen: sechs sachlich korrekte (Targets, z. B. Halluzinationen, Kontextfenster, RLHF) und
+    sechs plausibel klingende, aber erfundene (Foils, z. B. „Digitale Osmose“, „Rekursive Hardware-Heilung“).
+    Die Foils trennen echtes Wissen von bloßer Zustimmungstendenz und Selbstüberschätzung.'
+  en: 'Measures AI knowledge (AI literacy) with statements about artificial intelligence to be judged
+    as true or not: six factually correct ones (targets, e.g. hallucinations, context window, RLHF) and
+    six plausible-sounding but invented ones (foils, e.g. “digital osmosis”, “recursive hardware healing”).
+    The foils separate real knowledge from mere acquiescence and overconfidence.'
+scoring:
+  de: 'Skalenwert = Mittelwert der 12 Items (1 bis 5); die Foils (Items 7 bis 12) sind im Export bereits
+    rekodiert, hohe Werte stehen also überall für zutreffendes Wissen. Teilskalen: Target (Items 1 bis
+    6, Zustimmung zu Korrektem) und Foil (Items 7 bis 12, Ablehnung von Erfundenem); ihr Unterschied zeigt
+    eine Zustimmungstendenz.'
+  en: 'Scale score = mean of the 12 items (1 to 5); the foils (items 7 to 12) are already recoded in the
+    export, so high values stand for correct knowledge throughout. Subscales: target (items 1 to 6, agreeing
+    with what is correct) and foil (items 7 to 12, rejecting what is invented); their difference shows
+    acquiescence.'
+notes:
+  de: 'Lizenz: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), frei nutzbar und anpassbar mit
+    Quellenangabe und Hinweis auf Änderungen. Aussagen im Wortlaut des Originals; die Instruktion ist
+    ohne Anrede umformuliert (Original: „Im Folgenden findest du … Bitte beurteile, inwieweit die Aussagen
+    deiner Einschätzung nach zutreffen.“), damit sie für „Sie“ und „du“ passt. Englische Fassung: Übersetzung
+    für Askurious, von den Autoren freigegeben. Nur die Endpunkte sind beschriftet. Aussagen in zufälliger
+    Reihenfolge.'
+  en: 'Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), free to use and adapt with attribution
+    and a note of changes. Statements in the original wording; the instruction is rephrased without a
+    form of address (original: “Im Folgenden findest du … Bitte beurteile, inwieweit die Aussagen deiner
+    Einschätzung nach zutreffen.”) so that it fits both “Sie” and “du”. English version: translation for
+    Askurious, approved by the authors. Only the endpoints are labelled. Statements in random order.'
+authors:
+- family: Brauner
+- family: Glawe
+year: 2026
+sources:
+- role: original
+  citation: Brauner, P., & Glawe, F. (2026). Foil & Target Instrument for AI Literacy (FITAI).
+licence:
+  wording: CC-BY-4.0
+  distributable: true
+  permission_required: false
+  commercial: true
+tags:
+  status:
+  - validiert
+  art:
+  - Wissen
+  thema:
+  - Künstliche Intelligenz
+  - AI Literacy
+  fach:
+  - HCI
+  bezug:
+  - 'Person: veränderlich'
+family: null
+structure:
+  type: likert
+  code: FI
+  config:
+    points: 5
+    labeling: endpoints
+    label_display: once
+    randomize: true
+    statements:
+    - id: s1
+      code: FI_1
+      reverse: false
+      subscale: Target
+    - id: s2
+      code: FI_2
+      reverse: false
+      subscale: Target
+    - id: s3
+      code: FI_3
+      reverse: false
+      subscale: Target
+    - id: s4
+      code: FI_4
+      reverse: false
+      subscale: Target
+    - id: s5
+      code: FI_5
+      reverse: false
+      subscale: Target
+    - id: s6
+      code: FI_6
+      reverse: false
+      subscale: Target
+    - id: s7
+      code: FI_7
+      reverse: true
+      subscale: Foil
+    - id: s8
+      code: FI_8
+      reverse: true
+      subscale: Foil
+    - id: s9
+      code: FI_9
+      reverse: true
+      subscale: Foil
+    - id: s10
+      code: FI_10
+      reverse: true
+      subscale: Foil
+    - id: s11
+      code: FI_11
+      reverse: true
+      subscale: Foil
+    - id: s12
+      code: FI_12
+      reverse: true
+      subscale: Foil
+languages:
+  de:
+    status: source
+    wording: repo
+  en:
+    status: source
+    wording: repo
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

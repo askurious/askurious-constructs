@@ -1,0 +1,82 @@
+# Deutsche Staatsangehörigkeit (RatSWD STA_1)
+# Wortlaut: wording/<Sprache>.yaml
+format: 1
+id: ask:ratswd_sta1
+key: ratswd_sta1
+version: '1.0'
+status: review
+kind: standard_question
+requires: '2026.11'
+name:
+  de: Deutsche Staatsangehörigkeit (RatSWD STA_1)
+  en: German citizenship (RatSWD STA_1)
+short:
+  de: Ja oder nein
+  en: Yes or no
+description:
+  de: Basis-Merkmal des RatSWD-Standardfragenkatalogs (2023). Aus den Demographischen Standards (2016).
+  en: Basic characteristic of the RatSWD catalogue of standard questions (2023). From the Demographische
+    Standards (2016).
+scoring:
+  de: 1 = ja, 2 = nein. Daraus KonsortSWD x_citsc. −1 = weiß nicht, −2 = keine Angabe (fehlend).
+  en: 1 = yes, 2 = no. Gives KonsortSWD x_citsc. −1 = don't know, −2 = no answer (missing).
+notes:
+  de: 'Lizenz: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), frei nutzbar mit Quellenangabe;
+    Änderungen kennzeichnen (das Codebuch nennt Abweichungen vom Wortlaut). „Weiß nicht“ (−1) und „Keine
+    Angabe“ (−2) zählen als fehlend. Standardfrage: nicht Teil der gemeinsamen Auswertung der Konstrukte
+    (Pool). Englische Fassung: inoffizielle Arbeitsübersetzung.'
+  en: 'Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), free to use with attribution;
+    mark changes (the codebook lists deviations from the wording). “Don''t know” (−1) and “No answer”
+    (−2) count as missing. Standard question: not part of the pooled analysis of the constructs (pool).
+    English version: unofficial working translation.'
+authors:
+- name: RatSWD
+year: 2023
+sources:
+- role: original
+  citation: Rat für Sozial- und Wirtschaftsdaten. (2023). Standardfragenkatalog zur Erhebung soziodemographischer
+    und krisenbezogener Variablen (2. Aufl.; RatSWD Output Series, 7. Berufungsperiode Nr. 4b). RatSWD.
+  doi: 10.17620/02671.76
+licence:
+  wording: CC-BY-4.0
+  distributable: true
+  permission_required: false
+  commercial: true
+tags:
+  status:
+  - Standardfrage
+  quelle:
+  - RatSWD/KonsortSWD
+  art:
+  - Demografie
+  thema:
+  - Staatsangehörigkeit
+  bezug:
+  - 'Person: veränderlich'
+family: null
+structure:
+  type: single_choice
+  code: STA_1
+  config:
+    options:
+    - id: o1
+      code: '1'
+    - id: o2
+      code: '2'
+    - id: o3
+      code: '-1'
+      missing: true
+    - id: o4
+      code: '-2'
+      missing: true
+    layout: vertical
+languages:
+  de:
+    status: source
+    wording: repo
+  en:
+    status: working
+    wording: repo
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

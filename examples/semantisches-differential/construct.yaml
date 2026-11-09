@@ -1,0 +1,58 @@
+# Beispiel: semantisches Differential mit offenem Wortlaut; je Paar links und rechts in wording/<Sprache>.yaml.
+# Example: semantic differential with open wording; left and right per pair in wording/<language>.yaml.
+format: 1
+id: ask:beispiel_differential
+key: beispiel_differential
+version: "1.0"
+status: review
+kind: scale
+requires: "2026.11"
+name:
+  de: Beispiel Bewertung eines Videos
+  en: Example rating of a video
+short:
+  de: 3 Begriffspaare, 6 Stufen
+  en: 3 word pairs, 6 points
+description:
+  de: Erfundenes Beispiel, zeigt den Aufbau eines semantischen Differentials.
+  en: Invented example showing how a semantic differential is laid out.
+scoring:
+  de: Skalenwert = Mittelwert der 3 Paare (1 bis 6); Paar 1 (positiver Pol links) ist im Export bereits rekodiert.
+  en: Scale score = mean of the 3 pairs (1 to 6); pair 1 (positive pole on the left) is already recoded in the export.
+notes:
+  de: "Lizenz: CC BY 4.0, frei nutzbar mit Quellenangabe."
+  en: "Licence: CC BY 4.0, free to use with attribution."
+authors:
+  - {family: Muster, given: Erika}
+year: 2026
+sources:
+  - role: original
+    citation: "Muster, E. (2026). Ein Beispieldifferential. Beispielzeitschrift, 1(2), 11–20."
+licence:
+  wording: CC-BY-4.0
+  distributable: true
+  permission_required: false
+  commercial: true
+tags:
+  status: [validiert]
+  art: [Bewertung]
+  thema: [Medien]
+  fach: [Kommunikationswissenschaft]
+  bezug: ["Gegenstand"]
+family: null
+structure:
+  type: semantic
+  code: BVD
+  config:
+    points: 6
+    numbers: false
+    randomize: true
+    pairs:
+      - {id: p1, code: BVD_1, reverse: true}
+      - {id: p2, code: BVD_2, reverse: false}
+      - {id: p3, code: BVD_3, reverse: false}
+languages:
+  de: {status: source, wording: repo}
+  en: {status: working, wording: repo}
+versions:
+  - {version: "1.0", date: "2026-11-09", note: Erste Fassung / first version}

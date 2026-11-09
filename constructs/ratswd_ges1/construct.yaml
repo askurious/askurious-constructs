@@ -1,0 +1,81 @@
+# Geschlecht (RatSWD GES_1)
+# Wortlaut: wording/<Sprache>.yaml
+format: 1
+id: ask:ratswd_ges1
+key: ratswd_ges1
+version: '1.0'
+status: review
+kind: standard_question
+requires: '2026.11'
+name:
+  de: Geschlecht (RatSWD GES_1)
+  en: Sex (RatSWD GES_1)
+short:
+  de: Männlich, weiblich, divers
+  en: Male, female, diverse
+description:
+  de: Basis-Merkmal des RatSWD-Standardfragenkatalogs (2023). Aus den Demographischen Standards (2016),
+    mit „divers“ als dritter Antwort wie im Personenstandsgesetz. Für Geschlechtsidentität mit Selbstbeschreibung
+    gibt es das Konstrukt „Geschlecht“ nach Spiel et al. (2019).
+  en: Basic characteristic of the RatSWD catalogue of standard questions (2023). From the Demographische
+    Standards (2016), with “divers” as a third answer as in the German civil status law. For gender identity
+    with self-description there is the construct “Gender” after Spiel et al. (2019).
+scoring:
+  de: 1 = männlich, 2 = weiblich, 3 = divers; gleiche Codes wie KonsortSWD x_sex.
+  en: 1 = male, 2 = female, 3 = diverse; the same codes as KonsortSWD x_sex.
+notes:
+  de: 'Lizenz: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), frei nutzbar mit Quellenangabe;
+    Änderungen kennzeichnen (das Codebuch nennt Abweichungen vom Wortlaut). „Weiß nicht“ (−1) und „Keine
+    Angabe“ (−2) zählen als fehlend. Standardfrage: nicht Teil der gemeinsamen Auswertung der Konstrukte
+    (Pool). Englische Fassung: inoffizielle Arbeitsübersetzung.'
+  en: 'Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), free to use with attribution;
+    mark changes (the codebook lists deviations from the wording). “Don''t know” (−1) and “No answer”
+    (−2) count as missing. Standard question: not part of the pooled analysis of the constructs (pool).
+    English version: unofficial working translation.'
+authors:
+- name: RatSWD
+year: 2023
+sources:
+- role: original
+  citation: Rat für Sozial- und Wirtschaftsdaten. (2023). Standardfragenkatalog zur Erhebung soziodemographischer
+    und krisenbezogener Variablen (2. Aufl.; RatSWD Output Series, 7. Berufungsperiode Nr. 4b). RatSWD.
+  doi: 10.17620/02671.76
+licence:
+  wording: CC-BY-4.0
+  distributable: true
+  permission_required: false
+  commercial: true
+tags:
+  status:
+  - Standardfrage
+  quelle:
+  - RatSWD/KonsortSWD
+  art:
+  - Demografie
+  thema:
+  - Gender
+  bezug:
+  - 'Person: stabil'
+family: null
+structure:
+  type: single_choice
+  code: GES_1
+  config:
+    options:
+    - id: o1
+      code: '1'
+    - id: o2
+      code: '2'
+    - id: o3
+      code: '3'
+    layout: vertical
+languages:
+  de:
+    status: source
+    wording: repo
+  en:
+    status: working
+    wording: repo
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

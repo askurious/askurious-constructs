@@ -1,0 +1,12 @@
+for: ask:beispiel_likert_offen@1.0
+question: How far do you agree with the following statements about the robot?
+labels:
+  - strongly disagree
+  - disagree
+  - neither agree nor disagree
+  - agree
+  - strongly agree
+items:
+  BVA_1: I rely on the robot.
+  BVA_2: The robot does what it announces.
+  BVA_3: I prefer to keep an eye on the robot.

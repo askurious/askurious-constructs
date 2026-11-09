@@ -1,0 +1,14 @@
+# Sprachen der Wortlaute. Schlüssel wie in Askurious (app/lang.py, Befragungssprachen).
+# Languages of the wordings. Keys as in Askurious (survey languages).
+languages:
+  de: {de: "Deutsch (Sie)", en: "German (formal)"}
+  de-du: {de: "Deutsch (du)", en: "German (informal)"}
+  en: {de: "Englisch", en: "English"}
+  fr: {de: "Französisch", en: "French"}
+  es: {de: "Spanisch", en: "Spanish"}
+  it: {de: "Italienisch", en: "Italian"}
+  nl: {de: "Niederländisch", en: "Dutch"}
+  pt: {de: "Portugiesisch", en: "Portuguese"}
+  pl: {de: "Polnisch", en: "Polish"}
+  tr: {de: "Türkisch", en: "Turkish"}
+  ar: {de: "Arabisch", en: "Arabic"}

@@ -1,0 +1,83 @@
+# Geburtsmonat und -jahr (RatSWD ALT_1)
+# Wortlaut: wording/<Sprache>.yaml
+format: 1
+id: ask:ratswd_alt1
+key: ratswd_alt1
+version: '1.0'
+status: review
+kind: standard_question
+requires: '2026.11'
+name:
+  de: Geburtsmonat und -jahr (RatSWD ALT_1)
+  en: Month and year of birth (RatSWD ALT_1)
+short:
+  de: Monat und Jahr der Geburt, aus Listen gewählt
+  en: Month and year of birth, chosen from lists
+description:
+  de: Basis-Merkmal des RatSWD-Standardfragenkatalogs (2023). Aus den Demographischen Standards (2016)
+    mit leicht geändertem Fragetext; als Element „Datum / Uhrzeit“ im Modus „Monat und Jahr“ (Listen statt
+    Tippen, wie der Katalog für computergestützte Befragungen empfiehlt).
+  en: Basic characteristic of the RatSWD catalogue of standard questions (2023). From the Demographische
+    Standards (2016) with a slightly changed question; as the element “Date / time” in the mode “Month
+    and year” (lists instead of typing, as the catalogue recommends for computer-assisted surveys).
+scoring:
+  de: JJJJ-MM (ISO 8601). Daraus KonsortSWD x_doby (Jahr) und x_age (Alter in abgeschlossenen Jahren).
+  en: YYYY-MM (ISO 8601). Gives KonsortSWD x_doby (year) and x_age (age in completed years).
+notes:
+  de: 'Lizenz: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), frei nutzbar mit Quellenangabe;
+    Änderungen kennzeichnen (das Codebuch nennt Abweichungen vom Wortlaut). „Weiß nicht“ (−1) und „Keine
+    Angabe“ (−2) zählen als fehlend. Standardfrage: nicht Teil der gemeinsamen Auswertung der Konstrukte
+    (Pool). Englische Fassung: inoffizielle Arbeitsübersetzung. Geburtsmonat und -jahr machen Personen
+    zusammen mit Bundesland, Haushaltsgröße oder Beruf in kleinen Stichproben erkennbar; veröffentlichen
+    Sie dann nur das Geburtsjahr oder Altersgruppen.'
+  en: 'Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), free to use with attribution;
+    mark changes (the codebook lists deviations from the wording). “Don''t know” (−1) and “No answer”
+    (−2) count as missing. Standard question: not part of the pooled analysis of the constructs (pool).
+    English version: unofficial working translation. Month and year of birth, together with federal state,
+    household size or occupation, can make people recognisable in small samples; then publish only the
+    year of birth or age groups.'
+authors:
+- name: RatSWD
+year: 2023
+sources:
+- role: original
+  citation: Rat für Sozial- und Wirtschaftsdaten. (2023). Standardfragenkatalog zur Erhebung soziodemographischer
+    und krisenbezogener Variablen (2. Aufl.; RatSWD Output Series, 7. Berufungsperiode Nr. 4b). RatSWD.
+  doi: 10.17620/02671.76
+licence:
+  wording: CC-BY-4.0
+  distributable: true
+  permission_required: false
+  commercial: true
+tags:
+  status:
+  - Standardfrage
+  quelle:
+  - RatSWD/KonsortSWD
+  art:
+  - Demografie
+  thema:
+  - Alter
+  bezug:
+  - 'Person: stabil'
+family: null
+structure:
+  type: date_time
+  code: ALT_1
+  config:
+    parts: month
+    span: past
+    year_min: null
+    year_max: null
+    minute_step: 5
+    dont_know: false
+languages:
+  de:
+    status: source
+    wording: repo
+  en:
+    status: working
+    wording: repo
+versions:
+- version: '1.0'
+  note: Übernommen aus Askurious (seed_version 1) / taken over from Askurious

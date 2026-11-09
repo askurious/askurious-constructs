@@ -1,0 +1,9 @@
+for: ask:ratswd_hne6@1.0
+question: Can you now also tell me whether it is less than 4,000 euros, 4,000 to under 5,000 euros or
+  5,000 euros or more per month?
+options:
+  '1': 3,000 to under 4,000 euros
+  '2': 4,000 to under 5,000 euros
+  '3': 5,000 euros or more
+  '-1': Don't know
+  '-2': No answer

@@ -1,0 +1,6 @@
+for: ask:ratswd_erw2@1.0
+question: Do you have a paid side job (mini-job, casual work)?
+options:
+  '1': 'Yes'
+  '2': 'No'
+  '-1': Don't know

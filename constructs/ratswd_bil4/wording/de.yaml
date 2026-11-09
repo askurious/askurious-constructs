@@ -1,0 +1,17 @@
+for: ask:ratswd_bil4@1.0
+question: 'Welchen höchsten Ausbildungsabschluss bzw. Hochschulabschluss haben Sie?
+
+  <small>Hinweis: Personen mit ausländischen Bildungsabschlüssen sollen sich den Kategorien 2 bis 8 zuordnen.</small>'
+options:
+  '1': (Noch) kein beruflicher Abschluss
+  '2': Abschluss einer einjährigen Ausbildung an einer Schule des Gesundheitswesens, Vorbereitungsdienst
+    für den mittleren Dienst in der öffentlichen Verwaltung
+  '3': Abschluss einer zwei- bis dreijährigen Ausbildung an einer Schule des Gesundheitswesens
+  '4': Abgeschlossene Berufsausbildung (Lehre) oder berufsqualifizierender Abschluss einer Berufsfachschule
+    oder Kollegschule
+  '5': Abschluss einer Ausbildung zum Erzieher/zur Erzieherin, einer Fach-, Meister- oder Technikerschule,
+    Verwaltungs- und Wirtschaftsakademie oder Fachakademie, auch Fachschule der DDR
+  '6': Diplom einer Berufsakademie oder FH, Bachelor
+  '7': Diplom einer Universität, Master, Magister, Staatsexamen
+  '8': Promotion
+  '-1': Weiß nicht

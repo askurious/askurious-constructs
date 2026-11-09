@@ -1,0 +1,7 @@
+for: ask:ratswd_geb3@1.0
+question: Ist Ihre Mutter in Deutschland geboren?
+options:
+  '1': Ja
+  '2': Nein
+  '-1': Weiß nicht
+  '-2': Keine Angabe

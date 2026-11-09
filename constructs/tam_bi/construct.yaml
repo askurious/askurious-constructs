@@ -1,0 +1,103 @@
+# TAM: Nutzungsabsicht (Behavioral Intention)
+# Wortlaut: nicht im Repository (Lizenz), nur der Hash je Sprache
+format: 1
+id: ask:tam_bi
+key: tam_bi
+version: '2.0'
+status: review
+kind: scale
+requires: '2026.11'
+name:
+  de: 'TAM: Nutzungsabsicht (Behavioral Intention)'
+  en: 'TAM: Behavioral Intention'
+short:
+  de: 2 Aussagen, 7 Stufen; Nutzungsabsicht nach TAM2 (Venkatesh & Davis, 2000)
+  en: 2 statements, 7 points; intention to use following TAM2 (Venkatesh & Davis, 2000)
+description:
+  de: Absicht, ein System zu nutzen; abhängige Variable im erweiterten Technology Acceptance Model (TAM2).
+  en: Intention to use a system; dependent variable in the extended Technology Acceptance Model (TAM2).
+scoring:
+  de: Skalenwert = Mittelwert der 2 Items (1 bis 7).
+  en: Scale score = mean of the 2 items (1 to 7).
+notes:
+  de: Für den Wortlaut und seine Übersetzungen ist keine allgemeine Nutzungs- oder Veröffentlichungsfreigabe
+    dokumentiert. Die Angabe „nichtkommerzielle Forschung und Lehre“ allein ersetzt keinen Rechtebeleg.
+    Neue Nutzung setzt einen vom Betreiber geprüften Nachweis für die konkrete Studie, Person und Sprachfassung
+    voraus. Die Quelle ist immer anzugeben. „[System]“ durch den Namen der Technik ersetzen (zählt nicht
+    als Veränderung). Englischer Wortlaut wie veröffentlicht; deutsche Fassung ist eine inoffizielle Arbeitsübersetzung.
+  en: No general use or publication permission is documented for the wording or its translations. Stating
+    “non-commercial research and teaching” alone does not replace rights evidence. New use requires operator-checked
+    evidence covering the specific study, account and language version. Always cite the source. Replace
+    “[System]” with the name of the technology (does not count as a change). English wording as published;
+    the German version is an unofficial working translation.
+authors:
+- family: Venkatesh
+- family: Davis
+year: 2000
+sources:
+- role: original
+  citation: 'Venkatesh, V., & Davis, F. D. (2000). A theoretical extension of the technology acceptance
+    model: Four longitudinal field studies. Management Science, 46(2), 186–204.'
+  doi: 10.1287/mnsc.46.2.186.11926
+licence:
+  wording: article-no-licence
+  distributable: false
+  permission_required: true
+  commercial: false
+tags:
+  status:
+  - validiert
+  art:
+  - Verhaltensabsicht
+  thema:
+  - Technik
+  - Technikakzeptanz
+  fach:
+  - Wirtschaftsinformatik
+  bezug:
+  - Gegenstand
+family: null
+structure:
+  type: likert
+  code: BI
+  config:
+    points: 7
+    labeling: full
+    label_display: once
+    randomize: true
+    statements:
+    - id: s1
+      code: BI_1
+      reverse: false
+    - id: s2
+      code: BI_2
+      reverse: false
+  labels:
+    de:
+    - stimme überhaupt nicht zu
+    - stimme nicht zu
+    - stimme eher nicht zu
+    - weder noch
+    - stimme eher zu
+    - stimme zu
+    - stimme voll und ganz zu
+    en:
+    - strongly disagree
+    - disagree
+    - somewhat disagree
+    - neither agree nor disagree
+    - somewhat agree
+    - agree
+    - strongly agree
+languages:
+  de:
+    status: working
+    wording: overlay
+    sha256: sha256:3de956c6da9d64d86f02ea99aedf46e534357d0618e5d0f9c17a9c69b3073c11
+  en:
+    status: source
+    wording: overlay
+    sha256: sha256:dd73cad753f40b52acb1f823ed2c4522fa06bbd5dcc53d4c4a815c7d18060dc7
+versions:
+- version: '2.0'
+  note: Übernommen aus Askurious (seed_version 2) / taken over from Askurious

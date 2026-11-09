@@ -1,0 +1,10 @@
+for: ask:ratswd_hne3@1.0
+question: Es würde uns schon helfen, wenn Sie sich zumindest grob einer der folgenden Kategorien zuordnen
+  könnten. Beträgt Ihr monatliches Haushaltsnettoeinkommen weniger als 1.500 Euro, 1.500 bis unter 3.000
+  Euro oder 3.000 Euro und mehr im Monat?
+options:
+  '1': weniger als 1.500 Euro
+  '2': 1.500 bis unter 3.000 Euro
+  '3': 3.000 Euro und mehr
+  '-1': Weiß nicht
+  '-2': Keine Angabe

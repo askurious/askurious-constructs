@@ -1,0 +1,11 @@
+for: ask:ratswd_fam1@1.0
+question: 'What is your marital status?
+
+  <small>Note: please treat a registered civil partnership like a marriage in this question.</small>'
+options:
+  '1': Single, never married
+  '2': Married
+  '3': Divorced
+  '4': Widowed
+  '-1': Don't know
+  '-2': No answer

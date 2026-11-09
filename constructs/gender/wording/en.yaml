@@ -1,0 +1,8 @@
+for: ask:gender@6.0
+question: What is your gender?
+options:
+  '1': female
+  '2': male
+  '3': diverse
+  '4': 'Prefer to self-describe:'
+  '99': prefer not to disclose

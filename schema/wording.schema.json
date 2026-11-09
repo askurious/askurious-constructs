@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/askurious/askurious-constructs/schema/wording.schema.json",
+  "title": "Askurious construct wording",
+  "description": "Wording of one construct in one language: constructs/<key>/wording/<lang>.yaml, or the same format in an instance's private overlay (<key>/<lang>.yaml). Items and options are named by their codes from the structure.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "for": {"type": "string", "pattern": "^ask:[a-z][a-z0-9_]*@(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$",
+            "description": "construct and version this wording belongs to"},
+    "question": {"type": "string"},
+    "labels": {"type": "array", "items": {"type": "string"}, "description": "response labels (open scales)"},
+    "items": {
+      "type": "object",
+      "description": "item code -> statement, or {left, right} for a semantic differential",
+      "additionalProperties": {
+        "oneOf": [
+          {"type": "string"},
+          {"type": "object", "additionalProperties": false, "required": ["left", "right"],
+           "properties": {"left": {"type": "string"}, "right": {"type": "string"}}}
+        ]
+      }
+    },
+    "options": {"type": "object", "description": "answer code -> text", "additionalProperties": {"type": "string"}},
+    "prefix": {"type": "string"},
+    "suffix": {"type": "string"},
+    "validation_message": {"type": "string"}
+  }
+}

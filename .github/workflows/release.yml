@@ -1,0 +1,61 @@
+name: release
+
+# Ein Tag JJJJ.MM.N (z. B. 2026.11.0) baut das Manifest, signiert es mit minisign
+# und hängt manifest.json und manifest.json.sig an das GitHub-Release.
+# A tag YYYY.MM.N builds the manifest, signs it with minisign and attaches
+# manifest.json and manifest.json.sig to the GitHub release.
+#
+# Secret MANIFEST_SIGNING_KEY: Inhalt der geheimen minisign-Schlüsseldatei
+# (ohne Passwort erzeugt, minisign -G -W). Der öffentliche Schlüssel steht im Hauptrepo.
+# Secret MANIFEST_SIGNING_KEY: content of the secret minisign key file
+# (created without password, minisign -G -W). The public key lives in the main repository.
+
+on:
+  push:
+    tags:
+      - "[0-9][0-9][0-9][0-9].[0-9][0-9].[0-9]*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          sudo apt-get update -q
+          sudo apt-get install -y -q minisign
+      - name: Check tag format
+        run: |
+          echo "${{ github.ref_name }}" | grep -Eq '^[0-9]{4}\.(0[1-9]|1[0-2])\.[0-9]+$' \
+            || { echo "Tag muss JJJJ.MM.N sein / tag must be YYYY.MM.N"; exit 1; }
+      - name: Validate
+        run: python tools/validate.py
+      - name: Build manifest
+        run: python tools/build.py --release "${{ github.ref_name }}"
+      - name: Sign manifest
+        env:
+          MANIFEST_SIGNING_KEY: ${{ secrets.MANIFEST_SIGNING_KEY }}
+        run: |
+          if [ -z "$MANIFEST_SIGNING_KEY" ]; then
+            echo "Secret MANIFEST_SIGNING_KEY fehlt / is missing"; exit 1
+          fi
+          umask 077
+          printf '%s\n' "$MANIFEST_SIGNING_KEY" > "$RUNNER_TEMP/minisign.key"
+          minisign -S -s "$RUNNER_TEMP/minisign.key" -m dist/manifest.json \
+            -x dist/manifest.json.sig -t "askurious-constructs ${{ github.ref_name }}"
+          rm -f "$RUNNER_TEMP/minisign.key"
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${{ github.ref_name }}" dist/manifest.json dist/manifest.json.sig \
+            --title "${{ github.ref_name }}" --notes-file <(python tools/build.py --notes "${{ github.ref_name }}")

@@ -1,0 +1,34 @@
+for: ask:fitai@1.0
+question: Im Folgenden stehen verschiedene Aussagen über Künstliche Intelligenz. Inwieweit treffen diese
+  Aussagen zu?
+labels:
+- stimme gar nicht zu
+- ''
+- ''
+- ''
+- stimme voll zu
+items:
+  FI_1: Große Sprachmodelle (LLMs) funktionieren in erster Linie, indem sie das statistisch wahrscheinlichste
+    nächste Wort in einer Sequenz vorhersagen.
+  FI_2: KI-Modelle werden auf umfangreichen Datensätzen trainiert, die häufig urheberrechtlich geschützte
+    Bücher, Artikel und Websites enthalten.
+  FI_3: Generative KI kann „halluzinieren“, d. h. sie liefert mit Überzeugung Antworten, die sachlich
+    falsch sind.
+  FI_4: Das „Kontextfenster“ eines Modells legt die maximale Textmenge fest, die es in einem einzelnen
+    Gespräch verarbeiten oder „erinnern“ kann.
+  FI_5: „Reinforcement Learning from Human Feedback (RLHF)“ ist eine Methode, um das Verhalten von KI
+    an menschlichen Werten und Sicherheitsrichtlinien auszurichten.
+  FI_6: Neuronale Netze bestehen aus „Gewichten“ und „Biaswerten“, die während des Trainingsprozesses
+    angepasst werden, um Fehler zu minimieren.
+  FI_7: Um Überhitzung zu verhindern, müssen moderne KI-Systeme die Erinnerungen inaktiver Nutzerinnen
+    und Nutzer löschen, um physischen Speicherplatz freizugeben.
+  FI_8: KI-Modelle besitzen ein digitales „Unterbewusstsein“, das Informationen verarbeitet, auch wenn
+    sie nicht aktiv genutzt werden.
+  FI_9: KI-Modelle lernen neue Sprache durch „Digitale Osmose“, indem sie neben Dateien gespeichert werden,
+    die in dieser Sprache verfasst sind.
+  FI_10: Durch „Semantische Synchronizität“ können KI-Modelle grundlegende menschliche Emotionen wie Frustration
+    ausdrücken, wenn eine Eingabe unklar ist.
+  FI_11: Fortgeschrittene LLMs nutzen „Quantenverschränkung“, um ihre Antworten gleichzeitig auf verschiedenen
+    Nutzergeräten zu synchronisieren, ohne das Internet zu verwenden.
+  FI_12: „Rekursive Hardware-Heilung“ ist ein Prozess, bei dem KI beschädigte GPU-Schaltkreise physisch
+    reparieren kann, indem sie elektrische Ströme umleitet.

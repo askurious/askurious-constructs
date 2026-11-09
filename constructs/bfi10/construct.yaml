@@ -1,0 +1,142 @@
+# Big Five Inventory (BFI-10)
+# Wortlaut: nicht im Repository (Lizenz), nur der Hash je Sprache
+format: 1
+id: ask:bfi10
+key: bfi10
+version: '4.0'
+status: verified
+kind: scale
+requires: '2026.11'
+name:
+  de: Big Five Inventory (BFI-10)
+  en: Big Five Inventory (BFI-10)
+short:
+  de: 10 Aussagen, 5 Stufen; je 2 Items für Extraversion, Verträglichkeit, Gewissenhaftigkeit, Neurotizismus,
+    Offenheit
+  en: 10 statements, 5 points; 2 items each for extraversion, agreeableness, conscientiousness, neuroticism,
+    openness
+description:
+  de: Ultrakurzform des Big Five Inventory für Befragungen mit wenig Zeit. Erfasst die fünf Persönlichkeitsdimensionen
+    mit je einem positiv und einem negativ gepolten Item.
+  en: Ultra-short form of the Big Five Inventory for surveys with little time. Measures the five personality
+    dimensions with one positively and one negatively keyed item each.
+scoring:
+  de: 'Skalenwerte = Mittelwert je Subskala (E: 1, 6; A: 2, 7; C: 3, 8; N: 4, 9; O: 5, 10); die negativ
+    gepolten Items 1, 3, 4, 5 und 7 sind im Export bereits rekodiert.'
+  en: 'Scale scores = mean per subscale (E: 1, 6; A: 2, 7; C: 3, 8; N: 4, 9; O: 5, 10); the negatively
+    keyed items 1, 3, 4, 5 and 7 are already recoded in the export.'
+notes:
+  de: 'GESIS/ZIS: kostenfrei für nichtkommerzielle Forschungszwecke. Für andere Zwecke oder eine andere
+    als die dokumentierte Form ist das Einverständnis der Autorinnen und Autoren einzuholen. Die ZIS-Dokumentation
+    ist in allen resultierenden Arbeiten als Quelle anzugeben. Deutscher Wortlaut geprüft gegen ZIS; englische
+    Instruktion und Endpunkte nach Rammstedt & John (2007). Die englischen Items stammen aus dem Big Five
+    Inventory (John, Donahue & Kentle, 1991; © Oliver P. John), das für nichtkommerzielle Forschung frei
+    genutzt werden darf.'
+  en: 'GESIS/ZIS: free of charge for non-commercial research. For other purposes or a form other than
+    the documented one, ask the authors for permission. Cite the ZIS documentation as the source in all
+    resulting work. German wording checked against ZIS; English instruction and endpoints after Rammstedt
+    & John (2007). The English items come from the Big Five Inventory (John, Donahue & Kentle, 1991; ©
+    Oliver P. John), free to use for non-commercial research.'
+authors:
+- family: Rammstedt
+- family: John
+year: 2007
+sources:
+- role: original
+  citation: 'Rammstedt, B., & John, O. P. (2007). Measuring personality in one minute or less: A 10-item
+    short version of the Big Five Inventory in English and German. Journal of Research in Personality,
+    41(1), 203–212. Dokumentation: Rammstedt, B., Kemper, C. J., Klein, M. C., Beierlein, C., & Kovaleva,
+    A. (2014). Big Five Inventory (BFI-10). Zusammenstellung sozialwissenschaftlicher Items und Skalen
+    (ZIS). https://doi.org/10.6102/zis76'
+  doi: 10.1016/j.jrp.2006.02.001
+licence:
+  wording: ZIS-noncommercial
+  distributable: false
+  permission_required: false
+  commercial: false
+tags:
+  status:
+  - validiert
+  quelle:
+  - GESIS ZIS
+  art:
+  - Persönlichkeit
+  fach:
+  - Psychologie
+  bezug:
+  - 'Person: stabil'
+family: null
+structure:
+  type: likert
+  code: BFI
+  config:
+    points: 5
+    labeling: endpoints
+    label_display: once
+    randomize: true
+    statements:
+    - id: s1
+      code: BFI_1
+      reverse: true
+      subscale: E
+    - id: s2
+      code: BFI_2
+      reverse: false
+      subscale: A
+    - id: s3
+      code: BFI_3
+      reverse: true
+      subscale: C
+    - id: s4
+      code: BFI_4
+      reverse: true
+      subscale: N
+    - id: s5
+      code: BFI_5
+      reverse: true
+      subscale: O
+    - id: s6
+      code: BFI_6
+      reverse: false
+      subscale: E
+    - id: s7
+      code: BFI_7
+      reverse: true
+      subscale: A
+    - id: s8
+      code: BFI_8
+      reverse: false
+      subscale: C
+    - id: s9
+      code: BFI_9
+      reverse: false
+      subscale: N
+    - id: s10
+      code: BFI_10
+      reverse: false
+      subscale: O
+  labels:
+    de:
+    - trifft überhaupt nicht zu
+    - '2'
+    - '3'
+    - '4'
+    - trifft voll und ganz zu
+    en:
+    - disagree strongly
+    - '2'
+    - '3'
+    - '4'
+    - agree strongly
+languages:
+  de:
+    status: validated
+    wording: overlay
+    sha256: sha256:6e8bf72d6b0f02fcd45c05947f78086b7aa1d65c3eed332d99fb5d39abd50db8
+  en:
+    status: validated
+    wording: overlay
+    sha256: sha256:26865e3b292663a6c35498566eb2b132cba2ef38bba9e3a602b9e2212fec1a54
+versions:
+- version: '4.0'
+  note: Übernommen aus Askurious (seed_version 4) / taken over from Askurious

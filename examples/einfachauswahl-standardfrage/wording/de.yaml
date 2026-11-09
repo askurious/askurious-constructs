@@ -1,0 +1,6 @@
+for: ask:beispiel_standardfrage@1.0
+question: Lebt in Ihrem Haushalt ein Haustier?
+options:          # Antwortcode -> Text / answer code -> text
+  "1": Ja
+  "2": Nein
+  "-2": Keine Angabe

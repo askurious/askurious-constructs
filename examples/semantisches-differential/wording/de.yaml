@@ -1,0 +1,6 @@
+for: ask:beispiel_differential@1.0
+question: Wie fanden Sie das Video?
+items:
+  BVD_1: {left: spannend, right: langweilig}
+  BVD_2: {left: unklar, right: klar}
+  BVD_3: {left: unangenehm, right: angenehm}

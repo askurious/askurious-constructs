@@ -1,0 +1,11 @@
+for: ask:ratswd_fam1@1.0
+question: 'Welchen Familienstand haben Sie?
+
+  <small>Hinweis: Bitte behandeln Sie eine eingetragene Lebenspartnerschaft in dieser Frage wie eine Ehe.</small>'
+options:
+  '1': Ledig, noch nie verheiratet gewesen
+  '2': Verheiratet
+  '3': Geschieden
+  '4': Verwitwet
+  '-1': Weiß nicht
+  '-2': Keine Angabe

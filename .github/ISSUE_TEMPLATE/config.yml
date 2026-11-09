@@ -1,0 +1,14 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Sicherheitslücke melden / Report a vulnerability
+    url: https://github.com/askurious/askurious-constructs/blob/main/SECURITY.md
+    about: Bitte vertraulich, nicht als Issue. / Privately please, not as an issue.
+  - name: Fehler in Askurious selbst / Bug in Askurious itself
+    url: https://github.com/askurious/askurious/issues
+    about: Probleme der Plattform gehören ins Hauptrepository. / Problems of the platform belong in the main repository.
+  - name: Mail an Ralf Philipsen / Mail to Ralf Philipsen
+    url: mailto:philipsen@comm.rwth-aachen.de
+    about: Fragen zum Katalog ohne GitHub. / Questions about the catalogue without GitHub.
+  - name: Mail an Philipp Brauner / Mail to Philipp Brauner
+    url: mailto:brauner@comm.rwth-aachen.de
+    about: Fragen zum Katalog ohne GitHub. / Questions about the catalogue without GitHub.

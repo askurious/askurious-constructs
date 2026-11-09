@@ -8,7 +8,7 @@ SPDX-PackageDownloadLocation = "https://github.com/askurious/askurious-construct
 [[annotations]]
 path = "**"
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2026 Askurious contributors"
+SPDX-FileCopyrightText = "2026 RWTH Aachen University and the askurious-constructs contributors"
 SPDX-License-Identifier = "CC0-1.0"
 
 # Offen lizenzierter Wortlaut der Konstrukte: CC BY 4.0 (Quelle je Konstrukt in construct.yaml)
@@ -24,5 +24,5 @@ SPDX-License-Identifier = "CC-BY-4.0"
 [[annotations]]
 path = ["tools/**", "tests/**"]
 precedence = "override"
-SPDX-FileCopyrightText = "2026 Askurious contributors"
+SPDX-FileCopyrightText = "2026 RWTH Aachen University"
 SPDX-License-Identifier = "EUPL-1.2"

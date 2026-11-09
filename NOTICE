@@ -1,0 +1,35 @@
+askurious-constructs: the open catalogue of constructs (scales and standard questions) of Askurious.
+Copyright (c) 2026 RWTH Aachen University and the contributors. Authors: Ralf Philipsen, Philipp Brauner.
+
+This repository uses three licences. Which one applies to which file is stated machine-readably in REUSE.toml
+(https://reuse.software/); the full texts are in LICENSES/.
+
+- CC0-1.0 (LICENSE, LICENSES/CC0-1.0.txt): metadata, structure, hashes, schemas, vocabularies, families, examples
+  and documentation, i.e. everything not listed below. CC0 is the licence GitHub shows for the repository.
+- CC-BY-4.0 (LICENSES/CC-BY-4.0.txt): the wording in constructs/*/wording/. The authors and the source of each
+  wording are named in the construct.yaml next to its folder; cite them when you use it.
+- EUPL-1.2 (LICENSES/EUPL-1.2.txt): the tools in tools/ and their tests in tests/, as in the main repository
+  askurious/askurious. RWTH Aachen University holds the rights in this code and is the Licensor.
+
+Wording under other licences (for example GESIS/ZIS scales, scales from journal articles or books) is not in this
+repository. For such constructs it holds only their structure and a SHA-256 hash of the wording; each Askurious
+installation keeps the wording itself, under the terms of its source.
+
+Using a construct in a survey still means citing its source (sources and notes in construct.yaml), whatever the
+licence of the files here. The licence assessments in schema/vocab/licences.yaml and in the constructs are not
+legal advice.
+
+The names "Askurious" and "POLLtergeist" and their logos are not licensed under any of the licences above.
+
+---
+
+askurious-constructs: der offene Katalog der Konstrukte (Skalen und Standardfragen) von Askurious.
+Copyright (c) 2026 RWTH Aachen University und die Beitragenden. Autoren: Ralf Philipsen, Philipp Brauner.
+
+Drei Lizenzen gelten, welche für welche Datei, steht maschinenlesbar in REUSE.toml; die Volltexte in LICENSES/:
+CC0-1.0 für Metadaten, Struktur, Hashes, Schemas, Vokabulare, Familien, Beispiele und Dokumentation; CC-BY-4.0 für
+den Wortlaut in constructs/*/wording/ (Quelle in der construct.yaml daneben); EUPL-1.2 für tools/ und tests/
+(Lizenzgeberin RWTH Aachen University, wie im Hauptrepository). Anders lizenzierter Wortlaut (z. B. GESIS/ZIS,
+Verlagsartikel) liegt nicht hier, nur Struktur und Wortlauthash. Die Quelle eines Konstrukts ist beim Einsatz immer
+anzugeben. Die Lizenzeinschätzungen sind keine Rechtsberatung. Die Namen „Askurious“ und „POLLtergeist“ und ihre
+Logos stehen unter keiner dieser Lizenzen.

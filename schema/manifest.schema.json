@@ -8,7 +8,9 @@
   "required": ["format", "release", "generated", "source", "constructs", "families", "retired"],
   "properties": {
     "format": {"const": 1},
-    "release": {"type": "string", "pattern": "^\\d{4}\\.\\d{2}\\.\\d+$"},
+    "release": {"type": "string", "pattern": "^\\d{4}\\.\\d{2}\\.\\d+(-dev)?$",
+                "description": "YYYY.MM.N; YYYY.MM.N-dev for a build between releases (e.g. a snapshot)"},
+    "commit": {"type": "string", "pattern": "^[0-9a-f]{40}$", "description": "git commit the manifest was built from"},
     "generated": {"type": "string", "format": "date-time"},
     "source": {"type": "string"},
     "constructs": {

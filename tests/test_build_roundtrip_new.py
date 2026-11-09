@@ -109,3 +109,11 @@ def test_new_refuses_bad_keys_and_existing_folders(catalogue):
         except ValueError:
             continue
         raise AssertionError((example, key))
+
+
+def test_manifest_names_the_commit_of_a_clean_checkout(repo):
+    data = build.manifest(repo, "2026.11.0-dev")
+    assert data["release"] == "2026.11.0-dev" and len(data["commit"]) == 40
+    assert list(common.validator("manifest").iter_errors(data)) == []
+    (repo / "constructs" / "kamb" / "construct.yaml").write_text("changed: true\n", encoding="utf-8")
+    assert build.commit(repo) is None  # uncommitted changes: no commit named

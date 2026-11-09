@@ -1,7 +1,8 @@
 """Build dist/manifest.json, the one file Askurious instances read.
 
     python tools/build.py --release 2026.11.0
-    python tools/build.py --notes 2026.11.0     print the CHANGELOG section of a release (release notes)
+    python tools/build.py --release 2026.11.0-dev   a build between releases (e.g. a snapshot for Askurious)
+    python tools/build.py --notes 2026.11.0    print the CHANGELOG section of a release (release notes)
 
 Each construct carries its structure and wording hashes and, where the licence allows, its wording. Withdrawn
 constructs (status: retired) stay in the list and are named under "retired" as well. The time stamp comes from
@@ -13,6 +14,7 @@ import argparse
 import json
 import os
 import re
+import subprocess
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -23,7 +25,18 @@ import hash as hashing  # noqa: E402
 import validate  # noqa: E402
 
 SOURCE = "https://github.com/askurious/askurious-constructs"
-RELEASE_RE = re.compile(r"^\d{4}\.\d{2}\.\d+$")
+RELEASE_RE = re.compile(r"^\d{4}\.\d{2}\.\d+(-dev)?$")
+
+
+def commit(root: Path) -> str | None:
+    """The git commit of `root` if the catalogue there has no uncommitted changes, else None."""
+    def git(*args):
+        run = subprocess.run(["git", *args], cwd=root, capture_output=True, text=True)
+        return run.stdout.strip() if run.returncode == 0 else None
+
+    head = git("rev-parse", "HEAD")
+    dirty = git("status", "--porcelain", "--", common.CONSTRUCTS, common.FAMILIES, "schema")
+    return head if head and dirty == "" else None
 
 
 def generated() -> str:
@@ -47,8 +60,11 @@ def manifest(root: Path, release: str) -> dict:
             retired.append({"id": construct["id"], **({"since": construct["retired_since"]}
                                                        if construct.get("retired_since") else {})})
     families = [common.load_yaml(p) for p in sorted((root / common.FAMILIES).glob("*.yaml"))]
-    return {"format": 1, "release": release, "generated": generated(), "source": SOURCE,
-            "constructs": constructs, "families": families, "retired": retired}
+    out = {"format": 1, "release": release, "generated": generated(), "source": SOURCE}
+    head = commit(root)
+    if head:
+        out["commit"] = head
+    return {**out, "constructs": constructs, "families": families, "retired": retired}
 
 
 def notes(root: Path, release: str) -> str:
@@ -69,7 +85,7 @@ def main(argv=None) -> int:
         sys.stdout.write(notes(args.root, args.notes))
         return 0
     if not args.release or not RELEASE_RE.match(args.release):
-        parser.error("--release YYYY.MM.N is required")
+        parser.error("--release YYYY.MM.N (or YYYY.MM.N-dev) is required")
     errors = validate.validate(args.root, examples=False)
     if errors:
         print("\n".join(errors))

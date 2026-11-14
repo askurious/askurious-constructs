@@ -2,16 +2,21 @@ cff-version: 1.2.0
 message: "Wenn du den Katalog nutzt, zitiere ihn bitte so. Zitiere außerdem die Quelle jedes eingesetzten Konstrukts. / If you use the catalogue, please cite it like this. Also cite the source of each construct you use."
 title: "askurious-constructs: Katalog von Skalen und Standardfragen für Askurious"
 type: dataset
+abstract: >-
+  The open catalogue of the constructs of Askurious: scales and standard questions with their metadata, sources,
+  licences and structure, and the wording where its licence allows passing it on. Releases are signed and named
+  YYYY.MM.N (CHANGELOG.md).
 authors:
   - family-names: Philipsen
     given-names: Ralf
     email: philipsen@comm.rwth-aachen.de
-    affiliation: RWTH Aachen University
+    affiliation: Chair of Communication Science, RWTH Aachen University
   - family-names: Brauner
     given-names: Philipp
     email: brauner@comm.rwth-aachen.de
-    affiliation: RWTH Aachen University
+    affiliation: Chair of Communication Science, RWTH Aachen University
 repository-code: "https://github.com/askurious/askurious-constructs"
+url: "https://github.com/askurious/askurious-constructs/releases/latest"
 license:
   - CC0-1.0
   - CC-BY-4.0
